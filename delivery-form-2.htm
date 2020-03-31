@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="theme-color" content="#000000">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/mystyle.css" type="text/css">
+	<link rel="stylesheet" href="css/checkout.css" type="text/css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<title>Информация о заказе</title>
+</head>
+<body>
+	<div class="delivery-info">
+		<div class="delivery-info__title">
+			<div class="delivery-info__number">2</div>
+			<div class="delivery-info__name">Информация о доставке</div>
+		</div>
+		<div class="delivery-info__content">
+			<div class="delivery-info__your-address">
+				<div class="delivery-info__address">
+					<div class="delivery-info__address-name">
+						<input name="delivery-adress" type="radio" id="delivery-adress">
+						<label for="delivery-adress">Ваш адрес доставки</label>
+					</div>
+					<div class="delivery-info__address-content">
+						<div class="delivery-info__address-row">
+							Иванова Елена Антиповна,
+							+7 (927) 405-55-55
+						</div>
+						<div class="delivery-info__address-row">
+							121111,
+							Россия, Смоленская обл., с. Рязановка, ул. Советская, д. 16, к.2. кв. 1А
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="delivery-info__new-address">
+				<div class="delivery-info__address">
+					<div class="delivery-info__address-name">
+						<input name="delivery-adress" type="radio" id="delivery-adress-2">
+						<label for="delivery-adress-2">Новый адрес доставки и получатель</label>
+					</div>
+				</div>
+				<form action="#" class="delivery-info__form">
+					<div class="delivery-info__row">
+						<input type="text" placeholder="Имя">
+						<input type="text" placeholder="Фамилия">
+					</div>
+					<div class="delivery-info__row">
+						<input type="text" placeholder="Отчество (опционально)">
+						<select name="countries">
+							<option value="0" selected disabled optioncolor="#D0D0D0">Страна</option>
+							<option value="country">Россия</option>
+							<option value="country">Украина</option>
+							<option value="country">США</option>
+							<option value="country">Германия</option>
+						</select>	
+					</div>
+					<div class="delivery-info__row">
+						<input type="text" placeholder="Населённый пункт">
+					</div>
+					<div class="delivery-info__row">
+						<input type="text" placeholder="Адрес">
+					</div>
+					<div class="delivery-info__row">
+						<input type="text" placeholder="Индекс">
+						<input type="tel" placeholder="Телефон (опционально)">
+					</div>
+					<div class="delivery-info__row">
+						<input type="submit">
+					</div>
+				</form>
+			</div>
+			<div class="delivery-info__text">
+				Нажимая кнопку, я принимаю условия
+				<a href="#">Политики конфиденциальности</a>
+			</div>
+	</div>
+</body>
+</html>

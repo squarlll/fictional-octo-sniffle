@@ -1,0 +1,365 @@
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="theme-color" content="#000000">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/mystyle.css" type="text/css">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+        <!-- fonts -->
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+        <title>Корзина</title>
+    </head>
+    <body>
+        <section class="container cart">
+            <article>
+                <a class="cart-items" href="#multiCollapseExample1">
+                    <span>Корзина покупок</span>
+                </a>
+                <a href="#." class="cart-back">
+                    <span>Продолжить покупки</span>
+                </a>
+            </article>
+            <div class="collapse multi-collapse position-absolute" id="multiCollapseExample1">
+                <div class="card card-body">
+                    Нету товаров
+                </div>
+            </div>
+        </section>
+        <div class="back">
+            <div class="back__inner">
+                <img src="img/ico/back.svg" alt="">
+            </div>
+        </div>
+        <div class="store__modal">
+            <button href="#" class="store__modal-item message">Написать продавцу</button>
+            <button href="#" class="store__modal-item delete">Удалить все товары продавца</button>
+        </div>
+        <div class="store__modal-2">
+            <div class="store__modal-2-content">
+                <button href="#" class="store__modal-2-exit"><img src="img/ico/exit.svg" alt=""></button>
+                <div class="store__modal-2-seller">
+                    <div class="store__modal-2-photo">
+                        <img src="img/aerial-view-of-seashore-near-large-grey-rocks-853199.jpg" alt="">
+                    </div>
+                    <div class="store__modal-2-info">
+                        <div class="store__modal-2-name">Имя Фамилия</div>
+                        <div class="store__modal-2-work">из "Название магазина"</div>
+                    </div>
+                    <div class="store__modal-2-mymessage">
+                        <textarea name="modal-message" placeholder="Напишите свой вопрос Имя Фамилия"></textarea>
+                        <button><img src="img/ico/message.svg" alt=""></button>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <div class="store__modal-3">
+            <div class="store__modal-3-content">
+                <button href="#" class="store__modal-3-exit"><img src="img/ico/exit.svg" alt=""></button>
+                <div class="store__modal-3-text">
+                    Вы уверены, что хотите удалить все товары данного магазина из своей корзины?
+                </div>
+                <button class="store__modal-3-btn">да</button>
+            </div>
+        </div>
+        <button class="store__menu-btn">
+            <img src="img/ico/menu-btn.svg" alt="">
+        </button>
+        <section class="container store">
+            <button href="#" class="store__exit"><img src="img/ico/exit.svg" alt=""></button>
+            <div class="store__row">
+                <div class="store__row-block">
+                    <div class="store__logo"></div>
+                    <div class="store__name">Название магазина</div>
+                </div>
+                <a href="#" class="store__write-seller">Написать продавцу</a>
+            </div>
+            <div class="store__content">
+                <div class="store__col">
+                    <div class="product">
+                        <div class="product__col product_col-1">
+                            <div class="product__img"></div>
+                            <div class="product__actions">
+                                <button href="#" class="product__like">
+                                    <img src="img/ico/heart outline.svg" alt="">
+                                </button>
+                                <button href="#" class="product__basket">
+                                    <img src="img/ico/Vector.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product__block">
+                            <div class="product__col">
+                                <div class="product__info">
+                                    <div class="product__name">Название товара</div>
+                                    <div class="product__finished-custom">
+                                        Готовое изделие/На заказ 
+                                    </div>
+                                    <div class="product__variation-1">Вариация:
+                                        <div class="select">
+                                            <select class="variation" name="variation">
+                                                <option value="0" selected disabled optioncolor="#D0D0D0">Выберите</option>
+                                                <option value="A" optioncolor="black">A</option>
+                                                <option value="B" optioncolor="black">B</option>
+                                                <option value="C" optioncolor="black">C</option>
+                                                <option value="D" optioncolor="black">D</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="product__variation-2">Вариация:
+                                        <div class="select">
+                                            <select class="variation1" name="variation">
+                                                <option value="0" selected disabled optioncolor="#D0D0D0">Выберите</option>
+                                                <option value="1" optioncolor="black">1</option>
+                                                <option value="2" optioncolor="black">2</option>
+                                                <option value="3" optioncolor="black">3</option>
+                                                <option value="4" optioncolor="black">4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button class="product__change product__change_active">Изменить</button>
+                                    <button class="product__change-done product__change-done_active">Готово</button>
+                                    <form action="#" class="product__form">
+                                        <textarea class="product__comments" name="comments" placeholder='Добавить комментарий к заказу для "Название магазина"'></textarea>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="product__col">
+                                <div class="product__quantity-block-1">
+                                    <button class="product__minus">
+                                        <img src="img/ico/minus.svg" alt="">
+                                    </button>
+                                    <div class="product__quantity">1</div>
+                                    <button class="product__plus">
+                                        <img src="img/ico/plus.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="product__quantity-block-2">
+                                    <div class="select">
+                                        <select name="payment-quantity">
+                                            <option value="quantity">1</option>
+                                            <option value="quantity">2</option>
+                                            <option value="quantity">3</option>
+                                            <option value="quantity">4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__col">
+                                <div class="product__price">900 000 руб</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="store__col">
+                    <div class="decor-order">
+                        <div class="decor-order__title">Оформление заказа</div>
+                        <form novalidate action="#" class="decor-order__form">
+                            <div class="decor-order__row">
+                                <span>Способ оплаты</span>
+                                <div class="select">
+                                    <select required required name="payment-method">
+                                        <option value disabled selected>Выберите</option>
+                                        <option value="payment">способ-1</option>
+                                        <option value="payment">способ-2</option>
+                                        <option value="payment">способ-3</option>
+                                        <option value="payment">способ-4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="decor-order__row">
+                                <span>Город доставки</span>
+                                <div class="input-wrapper">
+                                    <input required class="decor-order__city" type="text" placeholder='Введите город'>
+                                    <img class="input-remove" src="img/ico/input-remove.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="decor-order__row">
+                                <span>Способ доставки</span>
+                                <div class="select">
+                                    <select required name="delivery-method">
+                                        <option value disabled selected>Выберите</option>
+                                        <option value="delivery">способ-1</option>
+                                        <option value="delivery">способ-2</option>
+                                        <option value="delivery">способ-3</option>
+                                        <option value="delivery">способ-4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="decor-order__info decor-order__info_disabled">
+                                <div class="decor-order__price-product">
+                                    <p>Стоимость товара</p><span>000 руб</span>
+                                </div>
+                                <div class="decor-order__price-delivery">
+                                    <p>Доставка</p><span>000 руб</span>
+                                </div>
+                                <hr>
+                                <div class="decor-order__total">
+                                    <p>Итого</p><span>000 руб</span>
+                                </div>
+                                <div class="decor-order__warning">
+                                    <img src="img/ico/warning.svg" alt="">
+                                    Заполните все поля
+                                </div>
+                                <input type="submit" class="decor-order__btn" value=ОФОРМИТЬ>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container store">
+            <button href="#" class="store__exit"><img src="img/ico/exit.svg" alt=""></button>
+            <div class="store__row">
+                <div class="store__row-block">
+                    <div class="store__logo"></div>
+                    <div class="store__name">Название магазина</div>
+                </div>
+                <a href="#" class="store__write-seller">Написать продавцу</a>
+            </div>
+            <div class="store__content">
+                <div class="store__col">
+                    <div class="product">
+                        <div class="product__col product_col-1">
+                            <div class="product__img"></div>
+                            <div class="product__actions">
+                                <button href="#" class="product__like">
+                                    <img src="img/ico/heart outline.svg" alt="">
+                                </button>
+                                <button href="#" class="product__basket">
+                                    <img src="img/ico/Vector.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product__block">
+                            <div class="product__col">
+                                <div class="product__info">
+                                    <div class="product__name">Название товара</div>
+                                    <div class="product__finished-custom">
+                                        Готовое изделие/На заказ 
+                                    </div>
+                                    <div class="product__variation-1">Вариация:
+                                        <div class="select">
+                                            <select class="variation" name="variation">
+                                                <option value="0" selected disabled optioncolor="#D0D0D0">Выберите</option>
+                                                <option value="A" optioncolor="black">A</option>
+                                                <option value="B" optioncolor="black">B</option>
+                                                <option value="C" optioncolor="black">C</option>
+                                                <option value="D" optioncolor="black">D</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="product__variation-2">Вариация:
+                                        <div class="select">
+                                            <select class="variation1" name="variation">
+                                                <option value="0" selected disabled optioncolor="#D0D0D0">Выберите</option>
+                                                <option value="1" optioncolor="black">1</option>
+                                                <option value="2" optioncolor="black">2</option>
+                                                <option value="3" optioncolor="black">3</option>
+                                                <option value="4" optioncolor="black">4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button class="product__change product__change_active">Изменить</button>
+                                    <button class="product__change-done product__change-done_active">Готово</button>
+                                    <form action="#" class="product__form">
+                                        <textarea class="product__comments" name="comments" placeholder='Добавить комментарий к заказу для "Название магазина"'></textarea>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="product__col">
+                                <div class="product__quantity-block-1">
+                                    <button class="product__minus">
+                                        <img src="img/ico/minus.svg" alt="">
+                                    </button>
+                                    <div class="product__quantity">1</div>
+                                    <button class="product__plus">
+                                        <img src="img/ico/plus.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="product__quantity-block-2">
+                                    <div class="select">
+                                        <select name="payment-quantity">
+                                            <option value="quantity">1</option>
+                                            <option value="quantity">2</option>
+                                            <option value="quantity">3</option>
+                                            <option value="quantity">4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__col">
+                                <div class="product__price">900 000 руб</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="store__col">
+                    <div class="decor-order">
+                        <div class="decor-order__title">Оформление заказа</div>
+                        <form novalidate action="#" class="decor-order__form">
+                            <div class="decor-order__row">
+                                <span>Способ оплаты</span>
+                                <div class="select">
+                                    <select required required name="payment-method">
+                                        <option value disabled selected>Выберите</option>
+                                        <option value="payment">способ-1</option>
+                                        <option value="payment">способ-2</option>
+                                        <option value="payment">способ-3</option>
+                                        <option value="payment">способ-4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="decor-order__row">
+                                <span>Город доставки</span>
+                                <div class="input-wrapper">
+                                    <input required class="decor-order__city" type="text" placeholder='Введите город'>
+                                    <img class="input-remove" src="img/ico/input-remove.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="decor-order__row">
+                                <span>Способ доставки</span>
+                                <div class="select">
+                                    <select required name="delivery-method">
+                                        <option value disabled selected>Выберите</option>
+                                        <option value="delivery">способ-1</option>
+                                        <option value="delivery">способ-2</option>
+                                        <option value="delivery">способ-3</option>
+                                        <option value="delivery">способ-4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="decor-order__info decor-order__info_disabled">
+                                <div class="decor-order__price-product">
+                                    <p>Стоимость товара</p><span>000 руб</span>
+                                </div>
+                                <div class="decor-order__price-delivery">
+                                    <p>Доставка</p><span>000 руб</span>
+                                </div>
+                                <hr>
+                                <div class="decor-order__total">
+                                    <p>Итого</p><span>000 руб</span>
+                                </div>
+                                <div class="decor-order__warning">
+                                    <img src="img/ico/warning.svg" alt="">
+                                    Заполните все поля
+                                </div>
+                                <input type="submit" class="decor-order__btn" value=ОФОРМИТЬ>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script src="js/myscript.js" type="text/javascript"></script>
+        <script src="js/popper.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    </body>
+</html>

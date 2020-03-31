@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="theme-color" content="#000000">
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+		<link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/mystyle.css" type="text/css">
+		<link rel="stylesheet" href="css/checkout.css" type="text/css">
+		<!-- fontawesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+		<title>Оформление заказа</title>
+</head>
+<body>
+	<div class="checkout__modal-2">
+	    <div class="checkout__modal-2-content">
+	        <button href="#" class="checkout__modal-2-exit"><img src="img/ico/exit.svg" alt=""></button>
+	        <div class="checkout__modal-2-seller">
+	            <div class="checkout__modal-2-photo">
+	                <img src="img/aerial-view-of-seashore-near-large-grey-rocks-853199.jpg" alt="">
+	            </div>
+	            <div class="checkout__modal-2-info">
+	                <div class="checkout__modal-2-name">Имя Фамилия</div>
+	                <div class="checkout__modal-2-work">из "Название магазина"</div>
+	            </div>
+	            <div class="checkout__modal-2-mymessage">
+	                <textarea name="modal-message" placeholder="Напишите свой вопрос Имя Фамилия"></textarea>
+	                <button><img src="img/ico/message.svg" alt=""></button>
+	            </div>
+	         </div>
+	    </div>
+	</div>
+	<div class="checkout">
+		<div class="checkout__row-1">
+			<div class="checkout__title">Оформление заказа</div>
+			<a href="#" class="checkout__back-1">
+				<img src="img/ico/back-1.svg" alt="">
+			</a>
+			<div class="purchase-steps">
+				<div class="purchase-steps__item">
+					<img src="img/ico/shopping-cart.svg" alt="">
+				</div>
+				<div class="purchase-steps__item">
+					<img src="img/ico/box.svg" alt="">
+				</div>
+				<div class="purchase-steps__item">
+					<img src="img/ico/Path.svg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="checkout__content">
+			<div class="checkout__col">
+				<div class="checkout__row">
+					<div class="checkout__row-score">
+						<div class="checkout__logo">
+							<img src="img/score.jpg" alt="">
+						</div>
+						<div class="checkout__name">Название магазина</div>
+					</div>
+					<a href="#" class="checkout__write-seller-ico">
+						<img src="img/ico/comment.svg" alt="">
+					</a>
+					<a href="#" class="checkout__write-seller">Написать продавцу</a>
+				</div>
+				<div class="contacts">
+					<div class="contacts__row">
+						<div class="contacts__number">1</div>
+						<div class="contacts__title">Контактная информация</div>
+					</div>
+					<div class="contacts__content">
+						<div class="contacts__account">
+							<div class="contacts__account-subtitle">У вас есть аккаунт?</div>
+							<div class="contacts__account-act">
+								<a href="#" class="contacts__account-item">Войдите</a>
+								<span>или</span>
+								<a href="#" class="contacts__account-item">зарегистрируйтесь</a>
+							</div>
+						</div>
+						<form action="#" class="contacts__form">
+							<div class="contacts__form-subtitle">Или продолжайте как гость:</div>
+							<input type="text" placeholder="Ваш Email">
+						</form>
+						<div class="contacts__info">
+							<input type="checkbox" id="info">
+							<label for="info">Я хочу получать информацию об акциях от Вязанино</label>
+						</div>
+					</div>
+				</div>
+				<div class="delivery-info">
+					<div class="delivery-info__title">
+						<div class="delivery-info__number">2</div>
+						<div class="delivery-info__name">Информация о доставке</div>
+					</div>
+					<div class="delivery-info__content">
+						<div class="delivery-info__your-address">
+							<div class="delivery-info__address">
+								<div class="delivery-info__address-name">
+									<input name="delivery-adress" type="radio" id="delivery-adress">
+									<label for="delivery-adress">Ваш адрес доставки</label>
+								</div>
+								<div class="delivery-info__address-content">
+									<div class="delivery-info__address-row">
+										Иванова Елена Антиповна,
+											+7 (927) 405-55-55
+									</div>
+									<div class="delivery-info__address-row">
+										121111,
+										Россия, Смоленская обл., с. Рязановка, ул. Советская, д. 16, к.2. кв. 1А
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="delivery-info__new-address">
+						<div class="delivery-info__address">
+							<div class="delivery-info__address-name">
+								<input name="delivery-adress" type="radio" id="delivery-adress-2">
+								<label for="delivery-adress-2">Новый адрес доставки и получатель</label>
+							</div>
+						</div>
+						<form action="#" class="delivery-info__form">
+							<div class="delivery-info__row">
+								<input type="text" placeholder="Имя">
+								<input type="text" placeholder="Фамилия">
+							</div>
+							<div class="delivery-info__row">
+								<input type="text" id="patronymic" placeholder="Отчество (опционально)">
+								<select name="countries">
+									<option value="0" selected disabled optioncolor="#D0D0D0">Страна</option>
+									<option value="country">Россия</option>
+									<option value="country">Украина</option>
+									<option value="country">США</option>
+									<option value="country">Германия</option>
+								</select>	
+							</div>
+							<div class="delivery-info__row">
+								<input type="text" placeholder="Населённый пункт">
+							</div>
+							<div class="delivery-info__row">
+								<input type="text" placeholder="Адрес">
+							</div>
+							<div class="delivery-info__row">
+								<input type="text" placeholder="Индекс">
+								<input id="phone" type="tel" placeholder="Телефон (опционально)">
+							</div>
+							<div class="delivery-info__row">
+								<div class="decor-2">
+									<div class="decor__row">
+										<div class="decor__title">
+											<div class="delivery-info__number">3</div>
+											<span>Информация по заказу</span>
+										</div>
+										<div class="decor-2__arrow">
+											<img src="img/ico/bottom-arrow.svg" alt="">
+										</div>
+										<a href="#" class="decor__change">Изменить</a>
+									</div>
+									<div class="decor__content">
+										<div class="decor__block-item">
+											<a href="#" class="decor__change">Изменить</a>
+											<div class="decor__item">
+												<div class="decor__item-img">
+													<img src="img/square.jpg" alt="">
+												</div>
+												<div class="decor__item-content">
+													<div class="decor__item-col">
+														<div class="decor__item-name">Название товара пол</div>
+														<div class="decor__item-variation">Вариация: Значение</div>
+														<div class="decor__item-variation">Вариация: Значение</div>
+														<div class="decor__item-quantity">Кол-во: <span>N</span></div>
+													</div>
+													<div class="decor__item-col">
+														<div class="decor__item-price">000 000 руб</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="decor__ways">
+											<div class="decor__ways-item">
+												<div class="decor__ways-name">Способ оплаты</div>
+												<div class="decor__ways-block">
+													<div class="decor__ways-subtitle">По договоренности</div>
+													<div class="decor__ways-info">Дополнительная информация (если есть)</div>
+												</div>
+											</div>
+											<div class="decor__ways-item">
+												<div class="decor__ways-name">Способ доставки</div>
+												<div class="decor__ways-block">
+													<div class="decor__ways-subtitle">По договоренности</div>
+													<div class="decor__ways-info">Дополнительная информация (если есть)</div>
+												</div>
+											</div>
+										</div>
+										<div class="decor__price">
+											<div class="decor__price-item">
+												<div class="decor__price-name">Стоимость</div>
+												<div class="decor__price-cost">000 руб</div>
+											</div>
+											<div class="decor__price-item">
+												<div class="decor__price-name">Доставка</div>
+												<div class="decor__price-cost">0 руб</div>
+											</div>
+										</div>
+										<div class="decor__total">
+											<div class="decor__total-subtitle">Итого</div>
+											<div class="decor__total-cost">000 руб</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="delivery-info__row">
+								<input type="submit">
+							</div>
+						</form>
+						<div class="delivery-info__text">
+							Нажимая кнопку, я принимаю условия
+							<a href="#">Политики конфиденциальности</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="checkout__col">
+				<div class="decor">
+					<div class="decor__row">
+						<div class="decor__title">Информация по заказу</div>
+						<a href="#" class="decor__change">Изменить</a>
+					</div>
+					<div class="decor__block-item">
+						<div class="decor__item">
+							<div class="decor__item-img">
+								<img src="img/square.jpg" alt="">
+							</div>
+							<div class="decor__item-content">
+								<div class="decor__item-col">
+									<div class="decor__item-name">Название товара пол</div>
+									<div class="decor__item-variation">Вариация: Значение</div>
+									<div class="decor__item-variation">Вариация: Значение</div>
+									<div class="decor__item-quantity">Кол-во: <span>N</span></div>
+								</div>
+								<div class="decor__item-col">
+									<div class="decor__item-price">000 000 руб</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="decor__ways">
+						<div class="decor__ways-item">
+							<div class="decor__ways-name">Способ оплаты</div>
+							<div class="decor__ways-block">
+								<div class="decor__ways-subtitle">По договоренности</div>
+								<div class="decor__ways-info">Дополнительная информация (если есть)</div>
+							</div>
+						</div>
+						<div class="decor__ways-item">
+							<div class="decor__ways-name">Способ доставки</div>
+							<div class="decor__ways-block">
+								<div class="decor__ways-subtitle">По договоренности</div>
+								<div class="decor__ways-info">Дополнительная информация (если есть)</div>
+							</div>
+						</div>
+					</div>
+					<div class="decor__price">
+						<div class="decor__price-item">
+							<div class="decor__price-name">Стоимость</div>
+							<div class="decor__price-cost">000 руб</div>
+						</div>
+						<div class="decor__price-item">
+							<div class="decor__price-name">Доставка</div>
+							<div class="decor__price-cost">0 руб</div>
+						</div>
+					</div>
+					<div class="decor__total">
+						<div class="decor__total-subtitle">Итого</div>
+						<div class="decor__total-cost">000 руб</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="checkout__back">
+			<a href="#">
+				<img src="img/ico/back-arrow.svg" alt="">
+				<span>НАЗАД</span>
+			</a>
+		</div>
+	</div>
+	<!-- scripts -->
+	<script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+	<script src="js/myscript.js" type="text/javascript"></script>
+	<script src="js/popper.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+</body>
+</html>

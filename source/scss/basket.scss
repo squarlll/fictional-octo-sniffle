@@ -1,0 +1,101 @@
+/* Basket */
+.basket{
+	padding: 20px 70px 0;
+	&__name{
+		&-title{
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 28px;
+			letter-spacing: 0.03em;
+			color: #000;
+		}
+	}
+	&__content{
+		display: flex;
+	}
+	&__col{
+		&:first-child{
+
+		}
+		&:last-child{
+
+		}
+	}
+	&__row{
+		display: flex;
+		&-block{
+			display: flex;
+		}
+	}
+	&__logo{
+
+	}
+	&__name{
+
+	}
+	&__write-seller{
+
+	}
+	&__item{
+		&-img{
+
+		}
+		&-content{
+
+		}
+		&-col{
+
+		}
+		&-name{
+
+		}
+		&-info{
+
+		}
+		&-variation{
+
+		}
+		&-quantity{
+
+		}
+		&-price{
+
+		}
+	}
+	.decor{
+		&__title{
+
+		}
+		&__form{
+
+		}
+		&__input{
+
+		}
+		&__item{
+			select{
+
+			}
+			input{
+
+			}
+			span{
+
+			}
+		}
+		&__name{
+
+		}
+		&__price{
+			&-item{
+
+			}
+			&-name{
+
+			}
+			span{
+
+			}
+		}
+	}
+}
