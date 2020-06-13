@@ -1,0 +1,15 @@
+/* Basket */
+.basket {
+  padding: 20px 70px 0; }
+  .basket__name-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #000; }
+  .basket__content {
+    display: flex; }
+  .basket__row {
+    display: flex; }
+    .basket__row-block {
+      display: flex; }

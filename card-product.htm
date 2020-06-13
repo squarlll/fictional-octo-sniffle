@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="theme-color" content="#000000">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/mystyle.css">
+	<link rel="stylesheet" href="css/card-product.css" type="text/css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<title>Карточка товара</title>
+</head>
+<body>
+	<!-- popup -->
+	<div class="popup-background"></div>
+	<div class="popup geolocation__popup">
+		<div class="popup__title">Выберите свой населённый пункт</div>
+		<form class="popup__form" action="#">
+			<input class="popup__input" type="search" placeholder="Введите значение">
+			<img class="popup__search-icon" src="img/ico/geolocation-popup-search.svg" alt="">
+		</form>
+		<div class="popup__cities">
+			<button class="popup__city">Москва</button>
+			<button class="popup__city">Санкт-Петербург</button>
+			<button class="popup__city">Екатеринбург, Свердловская область</button>
+			<button class="popup__city">Краснодар, Краснодарский край</button>
+			<button class="popup__city">Казань, Татарстан республика</button>
+			<button class="popup__city">Нижний Новгород, Нижегородская область</button>
+			<button class="popup__city">Пермь, Пермский край</button>
+			<button class="popup__city">Новосибирски, Новосибирская область</button>
+		</div>
+		<div class="popup__button-wrapper">
+			<button class="popup__button">Ок</button>
+		</div>
+	</div>
+
+	<div class="popup_1">
+		<div class="card-product__row">
+			<div class="card-product__col">
+				<div class="slider">
+					<div class="slider__mini">
+						<div class="slider__mini-item">
+							<img src="img/card-product/img-1.jpg" alt="">
+						</div>
+						<div class="slider__mini-item">
+							<img src="img/card-product/img-1.jpg" alt="">
+						</div>
+						<div class="slider__mini-item">
+							<img src="img/card-product/img-1.jpg" alt="">
+						</div>
+						<div class="slider__mini-item">
+							<img src="img/card-product/img-1.jpg" alt="">
+						</div>
+					</div>
+					<div class="slider__big">
+						<div class="slider__big-item">
+							<img src="img/card-product/img-2.jpg" alt="">
+						</div>
+						<div class="slider__big-item">
+							<img src="img/card-product/img-2.jpg" alt="">
+						</div>
+						<div class="slider__big-item">
+							<img src="img/card-product/img-2.jpg" alt="">
+						</div>
+						<div class="slider__big-item">
+							<img src="img/card-product/img-2.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="slider_1">
+					<div class="slider_1__image">
+						<div class="slider_1__item"><img src="img/card-product/img-2.jpg" alt=""></div>
+						<div class="slider_1__item"><img src="img/card-product/img-2.jpg" alt=""></div>
+						<div class="slider_1__item"><img src="img/card-product/img-2.jpg" alt=""></div>
+						<div class="slider_1__item"><img src="img/card-product/img-2.jpg" alt=""></div>
+						<div class="slider_1__item"><img src="img/card-product/img-2.jpg" alt=""></div>
+					</div>
+					<div class="slider_1__mini-slider">
+						<div class="mini-slider__item"><img src="img/card-product/img-1.jpg" alt=""></div>
+						<div class="mini-slider__item"><img src="img/card-product/img-1.jpg" alt=""></div>
+						<div class="mini-slider__item"><img src="img/card-product/img-1.jpg" alt=""></div>
+						<div class="mini-slider__item"><img src="img/card-product/img-1.jpg" alt=""></div>
+						<div class="mini-slider__item"><img src="img/card-product/img-1.jpg" alt=""></div>
+					</div>
+				</div>
+			</div>
+			<div class="card-product__col">
+				<div class="info">
+					<div class="info__row_1">
+						<a class="info__bestseller"><img src="img/card-product/bestseller.svg" alt="">Бестселлер</a>
+						<div class="info__discount"><img src="img/card-product/discount.svg" alt=""></div>
+					</div>
+					<div class="info__row">
+						<div class="info__block">
+							<div class="info__name">
+								Тут будет название продукта
+							</div>
+							<div class="info__finished">
+								Готовая работа/На заказ
+							</div>
+						</div>
+						<button class="info__like">
+							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 30 28" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M14.9999 3.5C14.4905 2.91326 13.8967 2.40093 13.2416 1.9736C11.7939 1.02926 10.0468 0.5 8.24988 0.5C3.62988 0.5 -0.00012207 4.06076 -0.00012207 8.59264C-0.00012207 10.2029 0.383491 11.732 1.04062 13.1868C3.07878 17.7029 7.74852 21.5139 11.7681 24.7944C12.9254 25.7389 14.0287 26.6393 14.9999 27.5C15.971 26.6393 17.0744 25.7389 18.2316 24.7944C22.2512 21.514 26.9208 17.703 28.959 13.187C29.6162 11.7322 29.9999 10.203 29.9999 8.59264C29.9999 4.06076 26.3699 0.5 21.7499 0.5C19.953 0.5 18.2059 1.02926 16.7582 1.9736C16.103 2.40093 15.5092 2.91326 14.9999 3.5ZM14.9999 23.5549C15.4841 23.1536 15.979 22.749 16.4731 22.3449C16.8917 22.0027 17.3097 21.6609 17.7202 21.322C19.3635 19.9654 20.9719 18.587 22.3962 17.1425C24.1588 15.355 25.4688 13.6345 26.2317 11.9363C26.7348 10.8151 26.9999 9.70449 26.9999 8.59264C26.9999 5.77182 24.7677 3.5 21.7499 3.5C19.9672 3.5 18.3037 4.27059 17.2653 5.46667L14.9999 8.07626L12.7344 5.46667C11.6961 4.27059 10.0325 3.5 8.24988 3.5C5.23201 3.5 2.99988 5.77182 2.99988 8.59264C2.99988 9.70449 3.26499 10.8151 3.76808 11.9363C4.53092 13.6345 5.84091 15.355 7.60352 17.1425C9.02783 18.587 10.6363 19.9654 12.2795 21.322C12.69 21.6609 13.108 22.0027 13.5266 22.3449C14.0208 22.749 14.5157 23.1536 14.9999 23.5549Z" fill="#C02100"/>
+							</svg>
+						</button>
+					</div>
+					<div class="info__row">
+						<div class="info__price"><div class="info__price-time">Скидка закончится через 2д 12:21:43</div>000 000 руб<div class="info__price-discount">000 000 руб</div></div>
+						<div class="info__block">
+							<div class="info__star">
+								<div class="info__star-item">
+									<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
+									<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+									</svg>
+								</div>
+								<div class="info__star-item">
+									<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
+									<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+									</svg>
+								</div>
+								<div class="info__star-item">
+									<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
+									<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+									</svg>
+								</div>
+								<div class="info__star-item">
+									<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 23" fill="none">
+									<path d="M12.9203 0.482034L16.159 7.04287L23.401 8.09677C23.7273 8.14382 23.9985 8.3722 24.1005 8.68575C24.2024 8.99929 24.1173 9.34352 23.881 9.57347L18.6397 14.6763L19.8769 21.8891C19.9325 22.2141 19.7989 22.5425 19.5322 22.7363C19.2654 22.9301 18.9118 22.9557 18.6199 22.8024L12.1434 19.4022L5.66588 22.8055C5.37376 22.9582 5.02035 22.9321 4.75381 22.7382C4.48726 22.5443 4.35362 22.2161 4.40891 21.8912L5.6461 14.6826L0.40472 9.57972C0.168453 9.34977 0.0833744 9.00554 0.18531 8.692C0.287245 8.37845 0.558483 8.15007 0.884806 8.10301L8.12672 7.04391L11.3655 0.483075C11.5116 0.187428 11.8128 0.00022109 12.1426 1.95689e-07C12.4724 -0.000220699 12.7738 0.186583 12.9203 0.482034Z" fill="#FBE8C3"/>
+									</svg>
+								</div>
+								<div class="info__star-item">
+									<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 23" fill="none">
+									<path d="M12.9203 0.482034L16.159 7.04287L23.401 8.09677C23.7273 8.14382 23.9985 8.3722 24.1005 8.68575C24.2024 8.99929 24.1173 9.34352 23.881 9.57347L18.6397 14.6763L19.8769 21.8891C19.9325 22.2141 19.7989 22.5425 19.5322 22.7363C19.2654 22.9301 18.9118 22.9557 18.6199 22.8024L12.1434 19.4022L5.66588 22.8055C5.37376 22.9582 5.02035 22.9321 4.75381 22.7382C4.48726 22.5443 4.35362 22.2161 4.40891 21.8912L5.6461 14.6826L0.40472 9.57972C0.168453 9.34977 0.0833744 9.00554 0.18531 8.692C0.287245 8.37845 0.558483 8.15007 0.884806 8.10301L8.12672 7.04391L11.3655 0.483075C11.5116 0.187428 11.8128 0.00022109 12.1426 1.95689e-07C12.4724 -0.000220699 12.7738 0.186583 12.9203 0.482034Z" fill="#FBE8C3"/>
+									</svg>
+								</div>
+							</div>
+							<div class="info__reviews">144 отзыва</div>
+						</div>
+					</div>
+					<div class="info__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio vitae numquam iure sunt amet aperiam ipsam fugit at repudiandae accusamus, nostrum mollitia, possimus natus iusto incidunt, itaque enim, facere deleniti.
+					</div>
+					<form novalidate class="info__form" action="#">
+						<div class="info__variations">
+							<div class="info__variations-item">
+								<div class="info__variations-title">
+									Вариация
+								</div>
+								<div class="select select_1">
+									<select class="info__variations-select" required>
+										<option value="" selected disabled>Выберите</option>
+										<option value="A">A</option>
+										<option value="B">B</option>
+										<option value="C">C</option>
+										<option value="D">D</option>
+									</select>
+									<svg class="select-arrow-svg" xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+									<path d="M2.17422 0C1.31987 0 0.858958 1.00212 1.41496 1.65079L5.24074 6.1142C5.63984 6.57981 6.36016 6.57981 6.75926 6.1142L10.585 1.65079C11.141 1.00212 10.6801 0 9.82578 0H2.17422Z"/>
+									</svg>
+								</div>
+							</div>
+							<div class="info__variations-item">
+								<div class="info__variations-title">
+									Вариация
+								</div>
+								<div class="select select_1">
+									<select class="info__variations-select" required>
+										<option value="" selected disabled>Выберите</option>
+										<option value="A">A</option>
+										<option value="B">B</option>
+										<option value="C">C</option>
+										<option value="D">D</option>
+									</select>
+									<svg class="select-arrow-svg" xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+									<path d="M2.17422 0C1.31987 0 0.858958 1.00212 1.41496 1.65079L5.24074 6.1142C5.63984 6.57981 6.36016 6.57981 6.75926 6.1142L10.585 1.65079C11.141 1.00212 10.6801 0 9.82578 0H2.17422Z"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="info__warning">
+							<img src="img/ico/warning.svg" alt="">Выберите все параметры товара
+						</div>
+						<div class="info__button-row">
+							<input class="info__button" type="submit" value="Добавить в корзину">
+							<a href="" class="popup_1__more">
+								<div class="popup_1__more-text">Подробнее о товаре</div>
+								<img class="popup_1__arrow" src="img/card-product/arrow-right-3.svg" alt="">
+							</a>
+						</div>
+						<!-- fixed button -->
+						<div class="info__button_1-wrapper">
+							<button type="submit" class="info__button_1">Добавить в корзину</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- pages -->
+	<div class="pages">
+		<a href="#" class="pages__item">Одежда</a>
+		<div class="pages__separator">
+			<svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+			<path d="M5.45955 5.99998L0.47977 1.0202C0.284508 0.824939 0.284508 0.508355 0.47977 0.313093C0.675032 0.117831 0.991614 0.117831 1.18688 0.313093L6.52021 5.64643C6.71547 5.84169 6.71547 6.15827 6.52021 6.35353L1.18688 11.6869C0.991614 11.8821 0.675032 11.8821 0.47977 11.6869C0.284508 11.4916 0.284508 11.175 0.47977 10.9798L5.45955 5.99998Z" fill="#999999"/>
+			</svg>
+		</div>
+		<a href="#" class="pages__item">Одежда для женщин</a>
+		<div class="pages__separator">
+			<svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+			<path d="M5.45955 5.99998L0.47977 1.0202C0.284508 0.824939 0.284508 0.508355 0.47977 0.313093C0.675032 0.117831 0.991614 0.117831 1.18688 0.313093L6.52021 5.64643C6.71547 5.84169 6.71547 6.15827 6.52021 6.35353L1.18688 11.6869C0.991614 11.8821 0.675032 11.8821 0.47977 11.6869C0.284508 11.4916 0.284508 11.175 0.47977 10.9798L5.45955 5.99998Z" fill="#999999"/>
+			</svg>
+		</div>
+		<a href="#" class="pages__item">Жакеты и жилеты</a>
+	</div>
+	<div class="container">
+		<div class="card-product">
+			<div class="card-product__content">
+				<div class="card-product__row">
+					<div class="card-product__col">
+						<div class="slider">
+							<div class="slider__mini">
+								<div class="slider__mini-item">
+									<img src="img/card-product/img-1.jpg" alt="">
+								</div>
+								<div class="slider__mini-item">
+									<img src="img/card-product/img-1.jpg" alt="">
+								</div>
+								<div class="slider__mini-item">
+									<img src="img/card-product/img-1.jpg" alt="">
+								</div>
+								<div class="slider__mini-item">
+									<img src="img/card-product/img-1.jpg" alt="">
+								</div>
+							</div>
+							<div class="slider__big">
+								<div class="slider__big-item">
+									<img src="img/card-product/img-2.jpg" alt="">
+								</div>
+								<div class="slider__big-item">
+									<img src="img/card-product/img-2.jpg" alt="">
+								</div>
+								<div class="slider__big-item">
+									<img src="img/card-product/img-2.jpg" alt="">
+								</div>
+								<div class="slider__big-item">
+									<img src="img/card-product/img-2.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="slider_1">
+							<div class="slider_1__image">
+								<div class="slider_1__item"><img src="img/card-product/img-2.jpg" alt=""></div>
+								<div class="slider_1__item"><img src="img/card-product/img-2.jpg" alt=""></div>
+								<div class="slider_1__item"><img src="img/card-product/img-2.jpg" alt=""></div>
+								<div class="slider_1__item"><img src="img/card-product/img-2.jpg" alt=""></div>
+								<div class="slider_1__item"><img src="img/card-product/img-2.jpg" alt=""></div>
+							</div>
+							<div class="slider_1__mini-slider">
+								<div class="mini-slider__item"><img src="img/card-product/img-1.jpg" alt=""></div>
+								<div class="mini-slider__item"><img src="img/card-product/img-1.jpg" alt=""></div>
+								<div class="mini-slider__item"><img src="img/card-product/img-1.jpg" alt=""></div>
+								<div class="mini-slider__item"><img src="img/card-product/img-1.jpg" alt=""></div>
+								<div class="mini-slider__item"><img src="img/card-product/img-1.jpg" alt=""></div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product__col">
+						<div class="info">
+							<div class="info__row_1">
+								<a class="info__bestseller"><img src="img/card-product/bestseller.svg" alt="">Бестселлер</a>
+								<div class="info__discount"><img src="img/card-product/discount.svg" alt=""></div>
+							</div>
+							<div class="info__row">
+								<div class="info__block">
+									<div class="info__name">
+										Тут будет название продукта
+									</div>
+									<div class="info__finished">
+										Готовая работа/На заказ
+									</div>
+								</div>
+								<button class="info__like">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 30 28" fill="none">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M14.9999 3.5C14.4905 2.91326 13.8967 2.40093 13.2416 1.9736C11.7939 1.02926 10.0468 0.5 8.24988 0.5C3.62988 0.5 -0.00012207 4.06076 -0.00012207 8.59264C-0.00012207 10.2029 0.383491 11.732 1.04062 13.1868C3.07878 17.7029 7.74852 21.5139 11.7681 24.7944C12.9254 25.7389 14.0287 26.6393 14.9999 27.5C15.971 26.6393 17.0744 25.7389 18.2316 24.7944C22.2512 21.514 26.9208 17.703 28.959 13.187C29.6162 11.7322 29.9999 10.203 29.9999 8.59264C29.9999 4.06076 26.3699 0.5 21.7499 0.5C19.953 0.5 18.2059 1.02926 16.7582 1.9736C16.103 2.40093 15.5092 2.91326 14.9999 3.5ZM14.9999 23.5549C15.4841 23.1536 15.979 22.749 16.4731 22.3449C16.8917 22.0027 17.3097 21.6609 17.7202 21.322C19.3635 19.9654 20.9719 18.587 22.3962 17.1425C24.1588 15.355 25.4688 13.6345 26.2317 11.9363C26.7348 10.8151 26.9999 9.70449 26.9999 8.59264C26.9999 5.77182 24.7677 3.5 21.7499 3.5C19.9672 3.5 18.3037 4.27059 17.2653 5.46667L14.9999 8.07626L12.7344 5.46667C11.6961 4.27059 10.0325 3.5 8.24988 3.5C5.23201 3.5 2.99988 5.77182 2.99988 8.59264C2.99988 9.70449 3.26499 10.8151 3.76808 11.9363C4.53092 13.6345 5.84091 15.355 7.60352 17.1425C9.02783 18.587 10.6363 19.9654 12.2795 21.322C12.69 21.6609 13.108 22.0027 13.5266 22.3449C14.0208 22.749 14.5157 23.1536 14.9999 23.5549Z" fill="#C02100"/>
+									</svg>
+								</button>
+							</div>
+							<div class="info__row">
+								<div class="info__price"><div class="info__price-time">Скидка закончится через 2д 12:21:43</div>000 000 руб<div class="info__price-discount">000 000 руб</div></div>
+								<div class="info__block">
+									<div class="info__star">
+										<div class="info__star-item">
+											<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
+											<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+											</svg>
+										</div>
+										<div class="info__star-item">
+											<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
+											<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+											</svg>
+										</div>
+										<div class="info__star-item">
+											<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
+											<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+											</svg>
+										</div>
+										<div class="info__star-item">
+											<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 23" fill="none">
+											<path d="M12.9203 0.482034L16.159 7.04287L23.401 8.09677C23.7273 8.14382 23.9985 8.3722 24.1005 8.68575C24.2024 8.99929 24.1173 9.34352 23.881 9.57347L18.6397 14.6763L19.8769 21.8891C19.9325 22.2141 19.7989 22.5425 19.5322 22.7363C19.2654 22.9301 18.9118 22.9557 18.6199 22.8024L12.1434 19.4022L5.66588 22.8055C5.37376 22.9582 5.02035 22.9321 4.75381 22.7382C4.48726 22.5443 4.35362 22.2161 4.40891 21.8912L5.6461 14.6826L0.40472 9.57972C0.168453 9.34977 0.0833744 9.00554 0.18531 8.692C0.287245 8.37845 0.558483 8.15007 0.884806 8.10301L8.12672 7.04391L11.3655 0.483075C11.5116 0.187428 11.8128 0.00022109 12.1426 1.95689e-07C12.4724 -0.000220699 12.7738 0.186583 12.9203 0.482034Z" fill="#FBE8C3"/>
+											</svg>
+										</div>
+										<div class="info__star-item">
+											<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 23" fill="none">
+											<path d="M12.9203 0.482034L16.159 7.04287L23.401 8.09677C23.7273 8.14382 23.9985 8.3722 24.1005 8.68575C24.2024 8.99929 24.1173 9.34352 23.881 9.57347L18.6397 14.6763L19.8769 21.8891C19.9325 22.2141 19.7989 22.5425 19.5322 22.7363C19.2654 22.9301 18.9118 22.9557 18.6199 22.8024L12.1434 19.4022L5.66588 22.8055C5.37376 22.9582 5.02035 22.9321 4.75381 22.7382C4.48726 22.5443 4.35362 22.2161 4.40891 21.8912L5.6461 14.6826L0.40472 9.57972C0.168453 9.34977 0.0833744 9.00554 0.18531 8.692C0.287245 8.37845 0.558483 8.15007 0.884806 8.10301L8.12672 7.04391L11.3655 0.483075C11.5116 0.187428 11.8128 0.00022109 12.1426 1.95689e-07C12.4724 -0.000220699 12.7738 0.186583 12.9203 0.482034Z" fill="#FBE8C3"/>
+											</svg>
+										</div>
+									</div>
+									<div class="info__reviews">144 отзыва</div>
+								</div>
+							</div>
+							<div class="info__text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio vitae numquam iure sunt amet aperiam ipsam fugit at repudiandae accusamus, nostrum mollitia, possimus natus iusto incidunt, itaque enim, facere deleniti.
+							</div>
+							<form novalidate class="info__form" action="#">
+								<div class="info__variations">
+									<div class="info__variations-item">
+										<div class="info__variations-title">
+											Вариация
+										</div>
+										<div class="select select_1">
+											<select class="info__variations-select" required>
+												<option value="" selected disabled>Выберите</option>
+												<option value="A">A</option>
+												<option value="B">B</option>
+												<option value="C">C</option>
+												<option value="D">D</option>
+											</select>
+											<svg class="select-arrow-svg" xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+											<path d="M2.17422 0C1.31987 0 0.858958 1.00212 1.41496 1.65079L5.24074 6.1142C5.63984 6.57981 6.36016 6.57981 6.75926 6.1142L10.585 1.65079C11.141 1.00212 10.6801 0 9.82578 0H2.17422Z"/>
+											</svg>
+										</div>
+									</div>
+									<div class="info__variations-item">
+										<div class="info__variations-title">
+											Вариация
+										</div>
+										<div class="select select_1">
+											<select class="info__variations-select" required>
+												<option value="" selected disabled>Выберите</option>
+												<option value="A">A</option>
+												<option value="B">B</option>
+												<option value="C">C</option>
+												<option value="D">D</option>
+											</select>
+											<svg class="select-arrow-svg" xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+											<path d="M2.17422 0C1.31987 0 0.858958 1.00212 1.41496 1.65079L5.24074 6.1142C5.63984 6.57981 6.36016 6.57981 6.75926 6.1142L10.585 1.65079C11.141 1.00212 10.6801 0 9.82578 0H2.17422Z"/>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="info__warning">
+									<img src="img/ico/warning.svg" alt="">Выберите все параметры товара
+								</div>
+								<div class="info__button-row">
+									<input class="info__button" type="submit" value="Добавить в корзину">
+								</div>
+								<!-- fixed button -->
+								<div class="info__button_1-wrapper">
+									<button type="submit" class="info__button_1">Добавить в корзину</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="card-product__row">
+					<div class="card-product__col_1">
+						<div class="description">
+							<div class="description__title">Подробное описание</div>
+							<div class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+							<button class="description__more">Показать полное описание</button>
+						</div>
+						<div class="reviews-all">
+							<div class="reviews-all__title">Отзывы</div>
+							<div class="reviews-all__star">
+								<div class="reviews-all__item">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+									<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+									</svg>
+								</div>
+								<div class="reviews-all__item">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+									<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+									</svg>
+								</div>
+								<div class="reviews-all__item">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+									<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+									</svg>
+								</div>
+								<div class="reviews-all__item">
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+									<path d="M12.9203 0.482034L16.159 7.04287L23.401 8.09677C23.7273 8.14382 23.9985 8.3722 24.1005 8.68575C24.2024 8.99929 24.1173 9.34352 23.881 9.57347L18.6397 14.6763L19.8769 21.8891C19.9325 22.2141 19.7989 22.5425 19.5322 22.7363C19.2654 22.9301 18.9118 22.9557 18.6199 22.8024L12.1434 19.4022L5.66588 22.8055C5.37376 22.9582 5.02035 22.9321 4.75381 22.7382C4.48726 22.5443 4.35362 22.2161 4.40891 21.8912L5.6461 14.6826L0.40472 9.57972C0.168453 9.34977 0.0833744 9.00554 0.18531 8.692C0.287245 8.37845 0.558483 8.15007 0.884806 8.10301L8.12672 7.04391L11.3655 0.483075C11.5116 0.187428 11.8128 0.00022109 12.1426 1.95689e-07C12.4724 -0.000220699 12.7738 0.186583 12.9203 0.482034Z" fill="#FBE8C3"/>
+									</svg>
+								</div>
+								<div class="reviews-all__item">
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+									<path d="M12.9203 0.482034L16.159 7.04287L23.401 8.09677C23.7273 8.14382 23.9985 8.3722 24.1005 8.68575C24.2024 8.99929 24.1173 9.34352 23.881 9.57347L18.6397 14.6763L19.8769 21.8891C19.9325 22.2141 19.7989 22.5425 19.5322 22.7363C19.2654 22.9301 18.9118 22.9557 18.6199 22.8024L12.1434 19.4022L5.66588 22.8055C5.37376 22.9582 5.02035 22.9321 4.75381 22.7382C4.48726 22.5443 4.35362 22.2161 4.40891 21.8912L5.6461 14.6826L0.40472 9.57972C0.168453 9.34977 0.0833744 9.00554 0.18531 8.692C0.287245 8.37845 0.558483 8.15007 0.884806 8.10301L8.12672 7.04391L11.3655 0.483075C11.5116 0.187428 11.8128 0.00022109 12.1426 1.95689e-07C12.4724 -0.000220699 12.7738 0.186583 12.9203 0.482034Z" fill="#FBE8C3"/>
+									</svg>
+								</div>
+								<div class="reviews-all__item">
+									144 отзыва
+								</div>
+							</div>
+						</div>
+						<div class="image">
+							<div class="image__title">Фотографии покупателей</div>
+							<div class="image__content">
+								<div class="image__item">
+									<img src="img/card-product/image.jpg" alt="">
+								</div>
+								<div class="image__item">
+									<img src="img/card-product/image.jpg" alt="">
+								</div>
+								<div class="image__item">
+									<img src="img/card-product/image.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="reviews">
+							<div class="reviews__item">
+								<div class="reviews__row">
+									<div class="reviews__ico">
+										<img src="img/card-product/ico.png" alt="">
+									</div>
+									<div class="reviews__block">
+										<div class="reviews__name">Имя пользователя</div>
+										<div class="reviews__star">
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="reviews__date">
+										Дата отзыва (формат 21 янв 2020)
+									</div>
+								</div>
+								<div class="reviews__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</div>
+							</div>
+							<div class="reviews__item">
+								<div class="reviews__row">
+									<div class="reviews__ico">
+										<img src="img/card-product/ico.png" alt="">
+									</div>
+									<div class="reviews__block">
+										<div class="reviews__name">Имя пользователя</div>
+										<div class="reviews__star">
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="reviews__date">
+										Дата отзыва (формат 21 янв 2020)
+									</div>
+								</div>
+								<div class="reviews__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</div>
+							</div>
+							<div class="reviews__item">
+								<div class="reviews__row">
+									<div class="reviews__ico">
+										<img src="img/card-product/ico.png" alt="">
+									</div>
+									<div class="reviews__block">
+										<div class="reviews__name">Имя пользователя</div>
+										<div class="reviews__star">
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="reviews__date">
+										Дата отзыва (формат 21 янв 2020)
+									</div>
+								</div>
+								<div class="reviews__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</div>
+							</div>
+							<div class="reviews__item">
+								<div class="reviews__row">
+									<div class="reviews__ico">
+										<img src="img/card-product/ico.png" alt="">
+									</div>
+									<div class="reviews__block">
+										<div class="reviews__name">Имя пользователя</div>
+										<div class="reviews__star">
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="reviews__date">
+										Дата отзыва (формат 21 янв 2020)
+									</div>
+								</div>
+								<div class="reviews__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</div>
+							</div>
+							<div class="reviews__item">
+								<div class="reviews__row">
+									<div class="reviews__ico">
+										<img src="img/card-product/ico.png" alt="">
+									</div>
+									<div class="reviews__block">
+										<div class="reviews__name">Имя пользователя</div>
+										<div class="reviews__star">
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+											<div class="reviews__star-item">
+												<img src="img/card-product/star-4.svg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="reviews__date">
+										Дата отзыва (формат 21 янв 2020)
+									</div>
+								</div>
+								<div class="reviews__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</div>
+							</div>
+						</div>
+						<div class="pagination">
+							<a href="#" class="pagination__item">1</a>
+							<a href="#" class="pagination__item">2</a>
+							<a href="#" class="pagination__item">...</a>
+							<a href="#" class="pagination__item pagination__item_active">6</a>
+							<a href="#" class="pagination__item">7</a>
+						</div>
+					</div>
+					<div class="card-product__col_2">
+						<div class="characteristic">
+							<div class="characteristic__item">
+								<div class="characteristic__row">
+									<div class="characteristic__title">Характеристики</div>
+									<div class="characteristic__arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none">
+										<path d="M9.25 1.81066L1.78033 9.28033C1.48744 9.57322 1.01256 9.57322 0.719669 9.28033C0.426777 8.98744 0.426777 8.51256 0.719669 8.21967L8.71967 0.21967C9.01256 -0.0732233 9.48744 -0.0732233 9.78033 0.21967L17.7803 8.21967C18.0732 8.51256 18.0732 8.98744 17.7803 9.28033C17.4874 9.57322 17.0126 9.57322 16.7197 9.28033L9.25 1.81066Z" fill="black"/>
+										</svg>
+									</div>
+								</div>
+								<div class="characteristic__content">
+									<div class="characteristic__block">
+										<div class="characteristic__subtitle">Материалы</div>
+										<div class="characteristic__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										</div>
+									</div>
+									<div class="characteristic__block">
+										<div class="characteristic__subtitle">Габариты</div>
+										<div class="characteristic__info">
+											<div class="characteristic__info-item">Длина: <span></span></div>
+										</div>
+										<div class="characteristic__info">
+											<div class="characteristic__info-item">Высота: <span></span></div>
+										</div>
+										<div class="characteristic__info">
+											<div class="characteristic__info-item">Ширина: <span></span></div>
+										</div>
+										<div class="characteristic__info">
+											<div class="characteristic__info-item">Вес: <span></span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="characteristic__item">
+								<div class="characteristic__row">
+									<div class="characteristic__title">Оплата и доставка</div>
+									<div class="characteristic__arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none">
+										<path d="M9.25 1.81066L1.78033 9.28033C1.48744 9.57322 1.01256 9.57322 0.719669 9.28033C0.426777 8.98744 0.426777 8.51256 0.719669 8.21967L8.71967 0.21967C9.01256 -0.0732233 9.48744 -0.0732233 9.78033 0.21967L17.7803 8.21967C18.0732 8.51256 18.0732 8.98744 17.7803 9.28033C17.4874 9.57322 17.0126 9.57322 16.7197 9.28033L9.25 1.81066Z" fill="black"/>
+										</svg>
+									</div>
+								</div>
+								<div class="characteristic__content">
+									<div class="characteristic__block">
+										<div class="characteristic__info">
+											<div class="characteristic__info-item">
+												<div class="characteristic__subtitle">Готовность к отправке:</div>
+												<p>Срок (н.е. 5-7 дней)</p>
+											</div>
+											<div class="characteristic__info-item">
+												<div class="characteristic__subtitle">Регион отправки:</div>
+												<p>Город/область</p>
+											</div>
+										</div>
+									</div>
+									<div class="characteristic__block">
+										<div class="characteristic__subtitle">Варианты доставки:</div>
+										<div class="characteristic__info">
+											<div class="characteristic__info-item">Lorem ipsum dolor sit amet</div>
+											<div class="characteristic__info-item characteristic__info-price">000 000 руб</div>
+										</div>
+										<div class="characteristic__info">
+											<div class="characteristic__info-item">Lorem ipsum dolor sit amet</div>
+											<div class="characteristic__info-item characteristic__info-price">000 000 руб</div>
+										</div>
+										<div class="characteristic__info">
+											<div class="characteristic__info-item">Lorem ipsum dolor sit amet</div>
+											<div class="characteristic__info-item characteristic__info-price">000 000 руб</div>
+										</div>
+										<div class="characteristic__info">
+											<div class="characteristic__info-item">Lorem ipsum dolor sit amet</div>
+											<div class="characteristic__info-item characteristic__info-price">000 000 руб</div>
+										</div>
+									</div>
+									<div class="characteristic__block">
+										<div class="characteristic__subtitle">Варианты оплата:</div>
+										<div class="characteristic__info">
+											<div class="characteristic__info-item">Lorem ipsum dolor sit amet</div>
+											<div class="characteristic__info-item characteristic__info-price">000 000 руб</div>
+										</div>
+										<div class="characteristic__info">
+											<div class="characteristic__info-item">Lorem ipsum dolor sit amet</div>
+											<div class="characteristic__info-item characteristic__info-price">000 000 руб</div>
+										</div>
+										<div class="characteristic__info">
+											<div class="characteristic__info-item">Lorem ipsum dolor sit amet</div>
+											<div class="characteristic__info-item characteristic__info-price">000 000 руб</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="characteristic__item">
+								<div class="characteristic__row">
+									<div class="characteristic__title">Таблица размеров</div>
+									<div class="characteristic__arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none">
+										<path d="M9.25 1.81066L1.78033 9.28033C1.48744 9.57322 1.01256 9.57322 0.719669 9.28033C0.426777 8.98744 0.426777 8.51256 0.719669 8.21967L8.71967 0.21967C9.01256 -0.0732233 9.48744 -0.0732233 9.78033 0.21967L17.7803 8.21967C18.0732 8.51256 18.0732 8.98744 17.7803 9.28033C17.4874 9.57322 17.0126 9.57322 16.7197 9.28033L9.25 1.81066Z" fill="black"/>
+										</svg>
+									</div>
+								</div>
+								<div class="characteristic__content">
+									<div class="characteristic__block characteristic__block_1">
+										<div class="characteristic_1__item">
+											<img src="img/card-product/img-1.jpg" alt="">
+										</div>
+										<div class="characteristic_1__item">
+											<img src="img/card-product/img-1.jpg" alt="">
+										</div>
+										<div class="characteristic_1__item">
+											<img src="img/card-product/img-1.jpg" alt="">
+										</div>
+									</div>
+									<div class="characteristic__block">
+										<div class="characteristic__subtitle">Размерный ряд:</div>
+										<div class="characteristic__info characteristic__info_1">
+											<div class="characteristic__info-item">Размер S</div>
+											<div class="characteristic__info-item">Описание определения размера</div>
+										</div>
+										<div class="characteristic__info characteristic__info_1">
+											<div class="characteristic__info-item">Lorem ipsum</div>
+											<div class="characteristic__info-item">Описание определения размера</div>
+										</div>
+										<div class="characteristic__info characteristic__info_1">
+											<div class="characteristic__info-item">Lorem ipsum</div>
+											<div class="characteristic__info-item">Описание определения размера</div>
+										</div>
+										<div class="characteristic__info characteristic__info_1">
+											<div class="characteristic__info-item">Lorem ipsum</div>
+											<div class="characteristic__info-item">Описание определения размера</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="characteristic__item">
+								<div class="characteristic__row">
+									<div class="characteristic__title">Рекомендации по уходу</div>
+									<div class="characteristic__arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none">
+										<path d="M9.25 1.81066L1.78033 9.28033C1.48744 9.57322 1.01256 9.57322 0.719669 9.28033C0.426777 8.98744 0.426777 8.51256 0.719669 8.21967L8.71967 0.21967C9.01256 -0.0732233 9.48744 -0.0732233 9.78033 0.21967L17.7803 8.21967C18.0732 8.51256 18.0732 8.98744 17.7803 9.28033C17.4874 9.57322 17.0126 9.57322 16.7197 9.28033L9.25 1.81066Z" fill="black"/>
+										</svg>
+									</div>
+								</div>
+								<div class="characteristic__content">
+									<div class="characteristic__block">
+										<div class="characteristic__subtitle">Материалы</div>
+										<div class="characteristic__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										</div>
+									</div>
+									<div class="characteristic__block">
+										<div class="characteristic__subtitle">Габариты</div>
+										<div class="characteristic__info">
+											<div class="characteristic__info-item">Длина:</div>
+										</div>
+										<div class="characteristic__info">
+											<div class="characteristic__info-item">Высота:</div>
+										</div>
+										<div class="characteristic__info">
+											<div class="characteristic__info-item">Ширина:</div>
+										</div>
+										<div class="characteristic__info">
+											<div class="characteristic__info-item">Вес:</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="seller">
+							<div class="seller__title">Продавец</div>
+							<div class="seller__content">
+								<div class="seller__ico">
+									<img src="img/card-product/ico-2.png" alt="">
+								</div>
+								<div class="seller__block">
+									<div class="seller__name">Имя Фамилия продавца</div>
+									<div class="seller__info">Владелец “<span>Название магазина</span>”</div>
+									<div class="seller__row">
+										<button class="seller__write">написать сообщение</button>
+										<a href="#" class="seller__regulations">правила магазина</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="reviews_1">
+						<div class="reviews_1__row">
+							<div class="reviews_1__wrapper">
+								<div class="reviews_1__title">Отзывы</div>
+								<div class="reviews_1__average">
+									<div class="reviews_1__star-item">
+										<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
+										<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+										</svg>
+									</div>
+									<div class="reviews_1__star-item">
+										<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
+										<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+										</svg>
+									</div>
+									<div class="reviews_1__star-item">
+										<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
+										<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+										</svg>
+									</div>
+									<div class="reviews_1__star-item">
+										<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 23" fill="none">
+										<path d="M12.9203 0.482034L16.159 7.04287L23.401 8.09677C23.7273 8.14382 23.9985 8.3722 24.1005 8.68575C24.2024 8.99929 24.1173 9.34352 23.881 9.57347L18.6397 14.6763L19.8769 21.8891C19.9325 22.2141 19.7989 22.5425 19.5322 22.7363C19.2654 22.9301 18.9118 22.9557 18.6199 22.8024L12.1434 19.4022L5.66588 22.8055C5.37376 22.9582 5.02035 22.9321 4.75381 22.7382C4.48726 22.5443 4.35362 22.2161 4.40891 21.8912L5.6461 14.6826L0.40472 9.57972C0.168453 9.34977 0.0833744 9.00554 0.18531 8.692C0.287245 8.37845 0.558483 8.15007 0.884806 8.10301L8.12672 7.04391L11.3655 0.483075C11.5116 0.187428 11.8128 0.00022109 12.1426 1.95689e-07C12.4724 -0.000220699 12.7738 0.186583 12.9203 0.482034Z" fill="#FBE8C3"/>
+										</svg>
+									</div>
+									<div class="reviews_1__star-item">
+										<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 23" fill="none">
+										<path d="M12.9203 0.482034L16.159 7.04287L23.401 8.09677C23.7273 8.14382 23.9985 8.3722 24.1005 8.68575C24.2024 8.99929 24.1173 9.34352 23.881 9.57347L18.6397 14.6763L19.8769 21.8891C19.9325 22.2141 19.7989 22.5425 19.5322 22.7363C19.2654 22.9301 18.9118 22.9557 18.6199 22.8024L12.1434 19.4022L5.66588 22.8055C5.37376 22.9582 5.02035 22.9321 4.75381 22.7382C4.48726 22.5443 4.35362 22.2161 4.40891 21.8912L5.6461 14.6826L0.40472 9.57972C0.168453 9.34977 0.0833744 9.00554 0.18531 8.692C0.287245 8.37845 0.558483 8.15007 0.884806 8.10301L8.12672 7.04391L11.3655 0.483075C11.5116 0.187428 11.8128 0.00022109 12.1426 1.95689e-07C12.4724 -0.000220699 12.7738 0.186583 12.9203 0.482034Z" fill="#FBE8C3"/>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="reviews_1__arrow">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none">
+									<path d="M9.25 1.81066L1.78033 9.28033C1.48744 9.57322 1.01256 9.57322 0.719669 9.28033C0.426777 8.98744 0.426777 8.51256 0.719669 8.21967L8.71967 0.21967C9.01256 -0.0732233 9.48744 -0.0732233 9.78033 0.21967L17.7803 8.21967C18.0732 8.51256 18.0732 8.98744 17.7803 9.28033C17.4874 9.57322 17.0126 9.57322 16.7197 9.28033L9.25 1.81066Z" fill="black"/>
+								</svg>
+							</div>
+						</div>
+						<hr class="reviews_1__hr">
+						<div class="reviews_1__content">
+							<div class="reviews_1__photos">
+								<div class="reviews__photos-title">Фотографии покупателей</div>
+								<div class="reviews_1__slider">
+									<div class="reviews_1__photos-item"><img src="img/card-product/img-1.jpg" alt=""></div>
+									<div class="reviews_1__photos-item"><img src="img/card-product/img-1.jpg" alt=""></div>
+									<div class="reviews_1__photos-item"><img src="img/card-product/img-1.jpg" alt=""></div>
+									<div class="reviews_1__photos-item"><img src="img/card-product/img-1.jpg" alt=""></div>
+								</div>
+							</div>
+							<div class="reviews_1__items">
+								<article class="reviews_1__item reviews_1__item_1">
+									<div class="reviews_1__row_1">
+										<div class="reviews_1__avatar"><img src="img/card-product/img-1.jpg" alt=""></div>
+										<div class="reviews_1__wrapper_1">
+											<div class="reviews_1__row_2">
+												<div class="reviews_1__name">Имя Пользователя</div>
+												<time class="reviews_1__date" datetime="2020-01-21 00:00">21 янв 2020</time>
+											</div>
+											<div class="reviews_1__opinion">
+												<div class="reviews_1__star-item">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
+													<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+													</svg>
+												</div>
+												<div class="reviews_1__star-item">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
+													<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+													</svg>
+												</div>
+												<div class="reviews_1__star-item">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
+													<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+													</svg>
+												</div>
+												<div class="reviews_1__star-item">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 23" fill="none">
+													<path d="M12.9203 0.482034L16.159 7.04287L23.401 8.09677C23.7273 8.14382 23.9985 8.3722 24.1005 8.68575C24.2024 8.99929 24.1173 9.34352 23.881 9.57347L18.6397 14.6763L19.8769 21.8891C19.9325 22.2141 19.7989 22.5425 19.5322 22.7363C19.2654 22.9301 18.9118 22.9557 18.6199 22.8024L12.1434 19.4022L5.66588 22.8055C5.37376 22.9582 5.02035 22.9321 4.75381 22.7382C4.48726 22.5443 4.35362 22.2161 4.40891 21.8912L5.6461 14.6826L0.40472 9.57972C0.168453 9.34977 0.0833744 9.00554 0.18531 8.692C0.287245 8.37845 0.558483 8.15007 0.884806 8.10301L8.12672 7.04391L11.3655 0.483075C11.5116 0.187428 11.8128 0.00022109 12.1426 1.95689e-07C12.4724 -0.000220699 12.7738 0.186583 12.9203 0.482034Z" fill="#FBE8C3"/>
+													</svg>
+												</div>
+												<div class="reviews_1__star-item">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 23" fill="none">
+													<path d="M12.9203 0.482034L16.159 7.04287L23.401 8.09677C23.7273 8.14382 23.9985 8.3722 24.1005 8.68575C24.2024 8.99929 24.1173 9.34352 23.881 9.57347L18.6397 14.6763L19.8769 21.8891C19.9325 22.2141 19.7989 22.5425 19.5322 22.7363C19.2654 22.9301 18.9118 22.9557 18.6199 22.8024L12.1434 19.4022L5.66588 22.8055C5.37376 22.9582 5.02035 22.9321 4.75381 22.7382C4.48726 22.5443 4.35362 22.2161 4.40891 21.8912L5.6461 14.6826L0.40472 9.57972C0.168453 9.34977 0.0833744 9.00554 0.18531 8.692C0.287245 8.37845 0.558483 8.15007 0.884806 8.10301L8.12672 7.04391L11.3655 0.483075C11.5116 0.187428 11.8128 0.00022109 12.1426 1.95689e-07C12.4724 -0.000220699 12.7738 0.186583 12.9203 0.482034Z" fill="#FBE8C3"/>
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="reviews_1__comment">
+										<div class="reviews_1__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+										<button class="reviews_1__more">Показать полное описание</button>
+									</div>
+								</article>
+								<article class="reviews_1__item reviews_1__item_2">
+									<div class="reviews_1__row_1">
+										<div class="reviews_1__avatar"><img src="img/card-product/img-1.jpg" alt=""></div>
+										<div class="reviews_1__wrapper_1">
+											<div class="reviews_1__row_2">
+												<div class="reviews_1__name">Имя Пользователя</div>
+												<time class="reviews_1__date" datetime="2020-01-21 00:00">21 янв 2020</time>
+											</div>
+											<div class="reviews_1__opinion">
+												<div class="reviews_1__star-item">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
+													<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+													</svg>
+												</div>
+												<div class="reviews_1__star-item">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
+													<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+													</svg>
+												</div>
+												<div class="reviews_1__star-item">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
+													<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+													</svg>
+												</div>
+												<div class="reviews_1__star-item">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 23" fill="none">
+													<path d="M12.9203 0.482034L16.159 7.04287L23.401 8.09677C23.7273 8.14382 23.9985 8.3722 24.1005 8.68575C24.2024 8.99929 24.1173 9.34352 23.881 9.57347L18.6397 14.6763L19.8769 21.8891C19.9325 22.2141 19.7989 22.5425 19.5322 22.7363C19.2654 22.9301 18.9118 22.9557 18.6199 22.8024L12.1434 19.4022L5.66588 22.8055C5.37376 22.9582 5.02035 22.9321 4.75381 22.7382C4.48726 22.5443 4.35362 22.2161 4.40891 21.8912L5.6461 14.6826L0.40472 9.57972C0.168453 9.34977 0.0833744 9.00554 0.18531 8.692C0.287245 8.37845 0.558483 8.15007 0.884806 8.10301L8.12672 7.04391L11.3655 0.483075C11.5116 0.187428 11.8128 0.00022109 12.1426 1.95689e-07C12.4724 -0.000220699 12.7738 0.186583 12.9203 0.482034Z" fill="#FBE8C3"/>
+													</svg>
+												</div>
+												<div class="reviews_1__star-item">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 23" fill="none">
+													<path d="M12.9203 0.482034L16.159 7.04287L23.401 8.09677C23.7273 8.14382 23.9985 8.3722 24.1005 8.68575C24.2024 8.99929 24.1173 9.34352 23.881 9.57347L18.6397 14.6763L19.8769 21.8891C19.9325 22.2141 19.7989 22.5425 19.5322 22.7363C19.2654 22.9301 18.9118 22.9557 18.6199 22.8024L12.1434 19.4022L5.66588 22.8055C5.37376 22.9582 5.02035 22.9321 4.75381 22.7382C4.48726 22.5443 4.35362 22.2161 4.40891 21.8912L5.6461 14.6826L0.40472 9.57972C0.168453 9.34977 0.0833744 9.00554 0.18531 8.692C0.287245 8.37845 0.558483 8.15007 0.884806 8.10301L8.12672 7.04391L11.3655 0.483075C11.5116 0.187428 11.8128 0.00022109 12.1426 1.95689e-07C12.4724 -0.000220699 12.7738 0.186583 12.9203 0.482034Z" fill="#FBE8C3"/>
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="reviews_1__images">
+										<div class="reviews_1__image">
+											<img src="img/card-product/img-1.jpg" alt="">
+										</div>
+										<div class="reviews_1__image">
+											<img src="img/card-product/img-1.jpg" alt="">
+										</div>
+										<div class="reviews_1__image">
+											<img src="img/card-product/img-1.jpg" alt="">
+										</div>
+									</div>
+									<div class="reviews_1__comment">
+										<div class="reviews_1__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+										<button class="reviews_1__more">Показать полное описание</button>
+									</div>
+								</article>
+								<article class="reviews_1__item reviews_1__item_3">
+									<div class="reviews_1__row_1">
+										<div class="reviews_1__avatar"><img src="img/card-product/img-1.jpg" alt=""></div>
+										<div class="reviews_1__wrapper_1">
+											<div class="reviews_1__row_2">
+												<div class="reviews_1__name">Имя Пользователя</div>
+												<time class="reviews_1__date" datetime="2020-01-21 00:00">21 янв 2020</time>
+											</div>
+											<div class="reviews_1__opinion">
+												<div class="reviews_1__star-item">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
+													<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+													</svg>
+												</div>
+												<div class="reviews_1__star-item">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
+													<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+													</svg>
+												</div>
+												<div class="reviews_1__star-item">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
+													<path d="M12.7774 0.482034L16.0162 7.04287L23.2581 8.09677C23.5844 8.14382 23.8556 8.3722 23.9576 8.68575C24.0595 8.99929 23.9744 9.34352 23.7382 9.57347L18.4968 14.6763L19.734 21.8891C19.7896 22.2141 19.656 22.5425 19.3893 22.7363C19.1225 22.9301 18.7689 22.9557 18.477 22.8024L12.0005 19.4022L5.523 22.8055C5.23087 22.9582 4.87747 22.9321 4.61092 22.7382C4.34438 22.5443 4.21074 22.2161 4.26603 21.8912L5.50321 14.6826L0.261837 9.57972C0.02557 9.34977 -0.0595089 9.00554 0.0424263 8.692C0.144361 8.37845 0.4156 8.15007 0.741923 8.10301L7.98383 7.04391L11.2226 0.483075C11.3687 0.187428 11.6699 0.00022109 11.9997 1.95689e-07C12.3295 -0.000220699 12.6309 0.186583 12.7774 0.482034Z" fill="#F2B138"/>
+													</svg>
+												</div>
+												<div class="reviews_1__star-item">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 23" fill="none">
+													<path d="M12.9203 0.482034L16.159 7.04287L23.401 8.09677C23.7273 8.14382 23.9985 8.3722 24.1005 8.68575C24.2024 8.99929 24.1173 9.34352 23.881 9.57347L18.6397 14.6763L19.8769 21.8891C19.9325 22.2141 19.7989 22.5425 19.5322 22.7363C19.2654 22.9301 18.9118 22.9557 18.6199 22.8024L12.1434 19.4022L5.66588 22.8055C5.37376 22.9582 5.02035 22.9321 4.75381 22.7382C4.48726 22.5443 4.35362 22.2161 4.40891 21.8912L5.6461 14.6826L0.40472 9.57972C0.168453 9.34977 0.0833744 9.00554 0.18531 8.692C0.287245 8.37845 0.558483 8.15007 0.884806 8.10301L8.12672 7.04391L11.3655 0.483075C11.5116 0.187428 11.8128 0.00022109 12.1426 1.95689e-07C12.4724 -0.000220699 12.7738 0.186583 12.9203 0.482034Z" fill="#FBE8C3"/>
+													</svg>
+												</div>
+												<div class="reviews_1__star-item">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 23" fill="none">
+													<path d="M12.9203 0.482034L16.159 7.04287L23.401 8.09677C23.7273 8.14382 23.9985 8.3722 24.1005 8.68575C24.2024 8.99929 24.1173 9.34352 23.881 9.57347L18.6397 14.6763L19.8769 21.8891C19.9325 22.2141 19.7989 22.5425 19.5322 22.7363C19.2654 22.9301 18.9118 22.9557 18.6199 22.8024L12.1434 19.4022L5.66588 22.8055C5.37376 22.9582 5.02035 22.9321 4.75381 22.7382C4.48726 22.5443 4.35362 22.2161 4.40891 21.8912L5.6461 14.6826L0.40472 9.57972C0.168453 9.34977 0.0833744 9.00554 0.18531 8.692C0.287245 8.37845 0.558483 8.15007 0.884806 8.10301L8.12672 7.04391L11.3655 0.483075C11.5116 0.187428 11.8128 0.00022109 12.1426 1.95689e-07C12.4724 -0.000220699 12.7738 0.186583 12.9203 0.482034Z" fill="#FBE8C3"/>
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+							<hr class="reviews_1__hr reviews_1__hr_1">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- content-2 -->
+			<div class="card-product__content-2">
+				<div class="score">
+					<div class="score__col">
+						<div class="score__title">Ещё больше интересного в магазине</div>
+						<div class="score__name">Название магазина</div>
+						<div class="score__row">
+							<button class="score__btn">подписаться</button>
+							<a href="#" class="score__transition">В МАГАЗИН</a>
+						</div>
+						<div class="score__info">
+							<div class="score__info-item">
+								<div class="score__subtitle">Продаж</div>
+								<div class="score__text">540</div>
+							</div>
+							<div class="score__info-item">
+								<div class="score__subtitle">Локация магазина:</div>
+								<div class="score__text">Город, область</div>
+							</div>
+						</div>
+					</div>
+					<div class="score__col">
+						<div class="score__image">
+							<div class="score__image-row">
+								<div class="score__image-item">
+									<img src="img/card-product/img-3.jpg" alt="">
+								</div>
+								<div class="score__image-item">
+									<img src="img/card-product/img-3.jpg" alt="">
+								</div>
+								<div class="score__image-item">
+									<img src="img/card-product/img-3.jpg" alt="">
+								</div>
+								<div class="score__image-item">
+									<img src="img/card-product/img-3.jpg" alt="">
+								</div>
+							</div>
+							<div class="score__image-row">
+								<div class="score__image-item">
+									<img src="img/card-product/img-3.jpg" alt="">
+								</div>
+								<div class="score__image-item">
+									<img src="img/card-product/img-3.jpg" alt="">
+								</div>
+								<div class="score__image-item">
+									<img src="img/card-product/img-3.jpg" alt="">
+								</div>
+								<div class="score__image-item">
+									<img src="img/card-product/img-3.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- / content-2 -->
+		</div>
+	</div>
+	<!-- like__content -->
+	<div class="like__title">Вам может понравиться</div>
+	<div class="like__wrapper">
+		<div class="like">
+			<div class="like__content">
+				<div class="like__slider">
+					<div class="like__item">
+						<div class="like__img">
+							<img src="img/card-product/img-4.jpg" alt="">
+						</div>
+						<div class="like__product-name">Название товара</div>
+						<div class="like__score-name">Название магазина</div>
+						<div class="like__price">2 100 руб</div>
+						<button class="like__btn">В корзину</button>
+					</div>
+					<div class="like__item">
+						<div class="like__img">
+							<img src="img/card-product/img-4.jpg" alt="">
+						</div>
+						<div class="like__product-name">Название товара</div>
+						<div class="like__score-name">Название магазина</div>
+						<div class="like__price">2 100 руб</div>
+						<button class="like__btn">В корзину</button>
+					</div>
+					<div class="like__item">
+						<div class="like__img">
+							<img src="img/card-product/img-4.jpg" alt="">
+						</div>
+						<div class="like__product-name">Название товара</div>
+						<div class="like__score-name">Название магазина</div>
+						<div class="like__price">2 100 руб</div>
+						<button class="like__btn">В корзину</button>
+					</div>
+					<div class="like__item">
+						<div class="like__img">
+							<img src="img/card-product/img-4.jpg" alt="">
+						</div>
+						<div class="like__product-name">Название товара</div>
+						<div class="like__score-name">Название магазина</div>
+						<div class="like__price">2 100 руб</div>
+						<button class="like__btn">В корзину</button>
+					</div>
+					<div class="like__item">
+						<div class="like__img">
+							<img src="img/card-product/img-4.jpg" alt="">
+						</div>
+						<div class="like__product-name">Название товара</div>
+						<div class="like__score-name">Название магазина</div>
+						<div class="like__price">2 100 руб</div>
+						<button class="like__btn">В корзину</button>
+					</div>
+					<div class="like__item">
+						<div class="like__img">
+							<img src="img/card-product/img-4.jpg" alt="">
+						</div>
+						<div class="like__product-name">Название товара</div>
+						<div class="like__score-name">Название магазина</div>
+						<div class="like__price">2 100 руб</div>
+						<button class="like__btn">В корзину</button>
+					</div>
+					<div class="like__item">
+						<div class="like__img">
+							<img src="img/card-product/img-4.jpg" alt="">
+						</div>
+						<div class="like__product-name">Название товара</div>
+						<div class="like__score-name">Название магазина</div>
+						<div class="like__price">2 100 руб</div>
+						<button class="like__btn">В корзину</button>
+					</div>
+					<div class="like__item">
+						<div class="like__img">
+							<img src="img/card-product/img-4.jpg" alt="">
+						</div>
+						<div class="like__product-name">Название товара</div>
+						<div class="like__score-name">Название магазина</div>
+						<div class="like__price">2 100 руб</div>
+						<button class="like__btn">В корзину</button>
+					</div>
+					<div class="like__item">
+						<div class="like__img">
+							<img src="img/card-product/img-4.jpg" alt="">
+						</div>
+						<div class="like__product-name">Название товара</div>
+						<div class="like__score-name">Название магазина</div>
+						<div class="like__price">2 100 руб</div>
+						<button class="like__btn">В корзину</button>
+					</div>
+					<div class="like__item">
+						<div class="like__img">
+							<img src="img/card-product/img-4.jpg" alt="">
+						</div>
+						<div class="like__product-name">Название товара</div>
+						<div class="like__score-name">Название магазина</div>
+						<div class="like__price">2 100 руб</div>
+						<button class="like__btn">В корзину</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / like__content -->
+	<!-- categories -->
+	<div class="categories">
+		<div class="categories__title">Категории работы</div>
+		<div class="categories__content">
+			<a href="#" class="categories__item">Вариант</a>
+			<a href="#" class="categories__item">Вариант</a>
+			<a href="#" class="categories__item">Вариант</a>
+			<a href="#" class="categories__item">Вариант</a>
+			<a href="#" class="categories__item">Вариант</a>
+		</div>
+	</div>
+	<!-- / categories -->
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer__wish">С теплотой и любовью, Вязанино</div>
+		<div class="footer__wrapper">
+			<div class="footer__content">
+				<div class="footer__col">
+					<div class="footer__subtitle">Каталог</div>
+					<div class="footer__block">
+						<a class="footer__item" href="">Авторская одежда</a>
+						<a class="footer__item" href="">Премиум</a>
+						<a class="footer__item" href="">Всё для детей</a>
+						<a class="footer__item" href="">Текстиль для дома</a>
+						<a class="footer__item" href="">Макрамэ</a>
+					</div>
+				</div>
+				<div class="footer__col">
+					<div class="footer__subtitle">Магазин на Вязанино</div>
+					<div class="footer__block">
+						<a class="footer__item" href="">Как открыть магазин</a>
+						<a class="footer__item" href="">Тарифы</a>
+						<a class="footer__item" href="">Правила</a>
+						<a class="footer__item" href="">Права собственности</a>
+						<a class="footer__item" href="">Помощь клиентам</a>
+					</div>
+				</div>
+				<div class="footer__col">
+					<div class="footer__subtitle">Вязанино</div>
+					<div class="footer__block">
+						<a class="footer__item" href="">О компании</a>
+						<a class="footer__item" href="">Блог</a>
+						<a class="footer__item" href="">Партнёры</a>
+						<a class="footer__item" href="">Пресса о нас</a>
+						<a class="footer__item" href="">Рекламодателям </a>
+					</div>
+				</div>
+				<div class="footer__col">
+					<div class="footer__subtitle">Помощь</div>
+					<div class="footer__block">
+						<a class="footer__item" href="">Как покупать</a>
+						<a class="footer__item" href="">Отследить товар</a>
+						<a class="footer__item" href="">Служба поддержки</a>
+					</div>
+				</div>
+				<div class="footer__col">
+					<div class="footer__subtitle">Подписывайтесь на нас</div>
+					<div class="footer__social">
+						<a class="footer__social-item" href="">
+							<img src="img/card-product/vk.svg" alt="">
+						</a>
+						<a class="footer__social-item" href="">
+							<img src="img/card-product/instagram.svg" alt="">
+						</a>
+						<a class="footer__social-item" href="">
+							<img src="img/card-product/facebook.svg" alt="">
+						</a>
+						<a class="footer__social-item" href="">
+							<img src="img/card-product/odnoklassniki.svg" alt="">
+						</a>
+						<a class="footer__social-item" href="">
+							<img src="img/card-product/social.svg" alt="">
+						</a>
+						<a class="footer__social-item" href="">
+							<img src="img/card-product/mail.svg " alt="">
+						</a>
+					</div> 
+				</div>
+			</div>
+			<div class="footer__content_mobile">
+				<div class="footer__geolocation-wrapper">
+					<button class="header__geolocation">
+						<img src="img/ico/geolocation.svg" alt="">
+						<span class="geolocation__text">Выберите</span>
+					</button>
+				</div>
+				<hr class="footer_mobile__hr">
+				<div class="footer__spoiler">
+					<div class="footer_mobile__name-wrapper">
+						<div class="footer_mobile__name">Магазин на Вязанино</div>
+						<div class="footer_mobile__arrow"><img src="img/ico/footer-arrow.svg" alt=""></div>
+					</div>
+					<div class="footer_mobile__content">
+						<a class="footer_mobile__item" href="">Как открыть магазин</a>
+						<a class="footer_mobile__item" href="">Тарифы</a>
+						<a class="footer_mobile__item" href="">Правила</a>
+						<a class="footer_mobile__item" href="">Права собственности</a>
+						<a class="footer_mobile__item" href="">Помощь клиентам</a>
+					</div>
+				</div>
+				<div class="footer__spoiler">
+					<div class="footer_mobile__name-wrapper">
+						<div class="footer_mobile__name">О компании</div>
+						<div class="footer_mobile__arrow"><img src="img/ico/footer-arrow.svg" alt=""></div>
+					</div>
+					<div class="footer_mobile__content">
+						<a class="footer_mobile__item" href="">О компании</a>
+						<a class="footer_mobile__item" href="">Блог</a>
+						<a class="footer_mobile__item" href="">Партнёры</a>
+						<a class="footer_mobile__item" href="">Пресса о нас</a>
+						<a class="footer_mobile__item" href="">Рекламодателям </a>
+					</div>
+				</div>
+				<div class="footer__spoiler">
+					<div class="footer_mobile__name-wrapper">
+						<div class="footer_mobile__name">Помощь</div>
+						<div class="footer_mobile__arrow"><img src="img/ico/footer-arrow.svg" alt=""></div>
+					</div>
+					<div class="footer_mobile__content">
+						<a class="footer_mobile__item" href="">Как покупать</a>
+						<a class="footer_mobile__item" href="">Отследить товар</a>
+						<a class="footer_mobile__item" href="">Служба поддержки</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__row">
+			<div class="footer__row-content">
+				<div class="footer__language">
+					<img src="img/card-product/russia.svg " alt="">Россия | Русский | ₽ (руб.)
+				</div>
+				<div class="footer__text">
+					© 2019 – 2020 Вязанино - интернет-гипермаркет вязаных товаров. ИП Вязникова Нина Васильевна. Все права защищены.
+				</div>
+				<div class="footer__wallets">
+				 	<div class="footer__wallets-item">
+				 		<img src="img/card-product/paypal.svg" alt="">
+				 	</div>
+				 	<div class="footer__wallets-item">
+				 		<img src="img/card-product/mastercard.svg" alt="">
+				 	</div>
+				 	<div class="footer__wallets-item">
+				 		<img src="img/card-product/visa.svg" alt="">
+				 	</div>
+				</div> 
+			</div>
+		</div> 
+	</footer>
+	<!-- / footer-->
+
+	<script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+	<script src="js/slick.min.js" type="text/javascript"></script>
+	<script src="js/myscript.js" type="text/javascript"></script>
+	<script src="js/popper.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+</body>
+</html>

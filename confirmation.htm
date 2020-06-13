@@ -2,21 +2,40 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Корзина</title>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	<meta name="theme-color" content="#000000">
-	<!-- fontawesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
-	<!-- fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/mystyle.css" type="text/css">
 	<link rel="stylesheet" href="css/confirmation.css" type="text/css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<title>Корзина</title>
 </head>
 <body>
+	<div class="checkout__modal-2">
+	    <div class="checkout__modal-2-content">
+	        <button href="#" class="checkout__modal-2-exit"><img src="img/ico/exit.svg" alt=""></button>
+	        <div class="checkout__modal-2-seller">
+	            <div class="checkout__modal-2-photo">
+	                <img src="img/aerial-view-of-seashore-near-large-grey-rocks-853199.jpg" alt="">
+	            </div>
+	            <div class="checkout__modal-2-info">
+	                <div class="checkout__modal-2-name">Имя Фамилия</div>
+	                <div class="checkout__modal-2-work">из "Название магазина"</div>
+	            </div>
+	            <div class="checkout__modal-2-mymessage">
+	                <textarea name="modal-message" placeholder="Напишите свой вопрос Имя Фамилия"></textarea>
+	                <button><img src="img/ico/message.svg" alt=""></button>
+	            </div>
+	         </div>
+	    </div>
+	</div>
 	<div class="confirmation">
 		<div class="confirmation__name">
 			<div class="confirmation__name-title">Оформление заказа</div>
@@ -39,47 +58,68 @@
 			<div class="confirmation__row">
 				<div class="confirmation__row-block">
 					<div class="confirmation__logo">
-						<img src="img/score-img.jpg" alt="">
+						<img src="img/logo.jpg" alt="">
 					</div>
-					<div class="confirmation__name">Название магазина</div>
+					<div class="confirmation__name">Перуанские сказки</div>
 				</div>
 				<div class="confirmation__write-seller">Написать продавцу</div>
+				<div class="confirmation__write-seller-ico">
+					<img src="img/ico/comment.svg" alt="">
+				</div>
 			</div>
 			<div class="confirmation__content">
 				<div class="confirmation__col">
 					<div class="confirmation__item">
 						<div class="confirmation__item-img">
-							<img src="img/product.jpg" alt="">
+							<img src="img/product-2.png" alt="">
 						</div>
 						<div class="confirmation__item-content">
 							<div class="confirmation__item-col">
-								<div class="confirmation__item-name">Название товара</div>
-								<div class="confirmation__item-info">Готовое изделие/На заказ</div>
-								<div class="confirmation__item-variation">Вариация: А</div>
-								<div class="confirmation__item-variation">Вариация: 1</div>
+								<div class="confirmation__item-name">Платье Диана</div>
+								<div class="confirmation__item-info">Готовое изделие</div>
 							</div>
 							<div class="confirmation__item-col">
 								<div class="confirmation__item-quantity">Количество: <span>1</span></div>
 							</div>
 							<div class="confirmation__item-col">
-								<div class="confirmation__item-price">000 руб</div>
-								<div class="confirmation__item-delivery">+500 руб за доставку</div>
+								<div class="confirmation__item-price"> 7 300 руб</div>
+							</div>
+						</div>
+					</div>
+					<div class="confirmation__item">
+						<div class="confirmation__item-img">
+							<img src="img/product-3.png" alt="">
+						</div>
+						<div class="confirmation__item-content">
+							<div class="confirmation__item-col">
+								<div class="confirmation__item-name">Сумка в стиле макрамэ Фантазия</div>
+								<div class="confirmation__item-info">Готовое изделие</div>
+								<div class="confirmation__item-variation">Цвет: красный</div>
+								<div class="confirmation__item-variation">Длина ручки: 120см</div>
+							</div>
+							<div class="confirmation__item-col">
+								<div class="confirmation__item-quantity">Количество: <span>1</span></div>
+							</div>
+							<div class="confirmation__item-col">
+								<div class="confirmation__item-price">11 000 руб</div>
 							</div>
 						</div>
 					</div>
 					<div class="confirmation__price">
 						<div class="confirmation__price-item">
+							<div class="confirmation__price-title">Доставка</div>
+							<div class="confirmation__price-text">500 руб</div>
 							<div class="confirmation__price-title">Итоговая стоимость</div>
-							<div class="confirmation__price-text">000 000 руб</div>
+							<div class="confirmation__price-text">18 800 руб</div>
 						</div>
 						<div class="confirmation__price-item">
 							<div class="confirmation__price-title">Способ оплаты</div>
-							<div class="confirmation__price-text">"Выбранным способом"</div>
+							<div class="confirmation__price-text">Перевод на банковскую карту</div>
 						</div>
 					</div>
 					<div class="confirmation__delivery delivery">
 						<div class="delivery__title">Информация о доставке</div>
-						<div class="delivery__way">"Способ доставки"</div>
+						<div class="delivery__way">Почта России</div>
 						<div class="delivery__info">
 							<div class="delivery__info-item">
 								<div class="delivery__info-subtitle">Адрес</div>
@@ -108,7 +148,7 @@
 									</div>
 								</div>
 								<div class="confirmation__terms-text">
-									Текст, написанный владельцем магазина в соответствующей графе с личном кабинете
+									Только самовывоз. Возможно доставка СДЭК, но чтобы курьер забрал сам.
 								</div>
 							</div>
 							<div class="confirmation__terms-item">
@@ -119,7 +159,7 @@
 									</div>
 								</div>
 								<div class="confirmation__terms-text">
-									Текст, написанный владельцем магазина в соответствующей графе с личном кабинете
+									Оплата наличными возможна только при самовывозе. Для оплаты наличными позвоните мне и уточните график работы мастерской и наличие вашего товара.
 								</div>
 							</div>
 							<div class="confirmation__terms-item">
@@ -130,7 +170,7 @@
 									</div>
 								</div>
 								<div class="confirmation__terms-text">
-									Текст, написанный владельцем магазина в соответствующей графе с личном кабинете
+									На все изделия нашей мастерской предоставляется пожизненная гарантия. В том случае, если Вы соблюдаете условия хранения и эксплуатации изделий, Вы можете рассчитывать на нас! Иные ситуации оговариваются отдельно.
 								</div>
 							</div>
 						</div>
@@ -139,31 +179,35 @@
 							Условия доставки и возврата указаны в <a href="#">Правилах магазина</a>.
 							Нажимая Оформить заказ, Вы принимаете правила. 
 						</div>
-						<a href="#" class="delivery__button">Оформить заказ</a>
+						<div class="delivery__button"><a href="#">Оформить заказ</a></div>
 					</div>
 				</div>
 				<div class="confirmation__col">
-					<div class="confirmation__terms terms-2">
+					<div class="confirmation__terms">
 						<div class="confirmation__terms-item">
 							<div class="confirmation__terms-subtitle">Условия доставки</div>
 							<div class="confirmation__terms-text">
-								Текст, написанный владельцем магазина в соответствующей графе с личном кабинете
+								Только самовывоз. Возможно доставка СДЭК, но чтобы курьер забрал сам.
 							</div>
 						</div>
 						<div class="confirmation__terms-item">
 							<div class="confirmation__terms-subtitle">Условия оплаты</div>
 							<div class="confirmation__terms-text">
-								Текст, написанный владельцем магазина в соответствующей графе с личном кабинете
+								Оплата наличными возможна только при самовывозе.
+								Для оплаты наличными позвоните мне и уточните график работы мастерской и наличие вашего товара. 
 							</div>
 						</div>
 						<div class="confirmation__terms-item">
 							<div class="confirmation__terms-subtitle">Условия обмена и возврата</div>
 							<div class="confirmation__terms-text">
-								Текст, написанный владельцем магазина в соответствующей графе с личном кабинете
+								На все изделия нашей мастерской предоставляется
+								пожизненная гарантия. В том случае, если Вы соблюдаете 
+								условия хранения и эксплуатации изделий, Вы можете 
+								рассчитывать на нас! Иные ситуации оговариваются отдельно.
 							</div>
 						</div>
 					</div>
-					<div class="confirmation__text terms-text-2">
+					<div class="confirmation__text">
 						Продавец осуществляет отправку товара самостоятельно.
 						Условия доставки и возврата указаны в <a href="#">Правилах магазина</a>.
 						Нажимая Оформить заказ, Вы принимаете правила. 

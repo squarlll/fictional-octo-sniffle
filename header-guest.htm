@@ -1,0 +1,2157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/mystyle.css" type="text/css">
+	<link rel="stylesheet" href="css/header.css" type="text/css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<title>меню</title>
+</head>
+<body>
+	<!-- popup -->
+	<div class="popup-background"></div>
+	<div class="popup settings__popup">
+		<div class="popup__title">Обновление настроек</div>
+		<div class="popup__subtitle">Здесь Вы можете обновить свои настройки сайта по стране, языку и валюте</div>
+		<form action="#">
+			<div class="setting__name">Страна</div>
+			<div class="popup__form setting__form">
+				<select class="popup__select setting__country">
+					<option value="Россия" selected>Россия</option>
+					<option value="Украина">Украина</option>
+					<option value="Беларусь">Беларусь</option>
+				</select>
+				<img class="popup__select-icon" src="img/ico/select-arrow.svg" alt="">
+			</div>
+			<div class="setting__name">Язык</div>
+			<div class="popup__form setting__form">
+				<select class="popup__select setting__language">
+					<option value="Русский" selected>Русский</option>
+					<option value="Английский">Английский</option>
+				</select>
+				<img class="popup__select-icon" src="img/ico/select-arrow.svg" alt="">
+			</div>
+			<div class="setting__name">Валюта</div>
+			<div class="popup__form setting__form">
+				<select class="popup__select setting__currency">
+					<option value="&#8381; (руб.)" selected>&#8381; Российский рубль</option>
+					<option value="&#36;">&#36; Доллар</option>
+				</select>
+				<img class="popup__select-icon" src="img/ico/select-arrow.svg" alt="">
+			</div>
+		</form>
+		<div class="popup__button-wrapper">
+			<button class="popup__button setting__button">Ок</button>
+		</div>
+	</div>
+	<!-- header -->
+	<div class="sign-in__message">
+		<span>Войдите или зарегистрируйтесь</span>, чтобы отслеживать заказы, писать мастерам и работать со своим магазином
+		<div class="triangle">
+			<img src="img/ico/triangle.svg" alt="">
+		</div>
+	</div>
+	<header class="header">
+		<div class="header__container">
+			<div class="header__burger_mobile header__burger_mobile_1">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="header__logo">
+				<a href="#."><img src="img/ico/logo.svg" alt=""></a>
+			</div>
+			<a href="" class="header__logo_1"><img src="img/ico/logo_1.svg" alt=""></a>
+			<div class="header__buttons_mobile">
+				<button class="header__search_1">
+					<img src="img/ico/search_1.svg" alt="">
+				</button>
+				<button class="header__premium">
+					<svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M23.671 4.06814C23.3875 3.82613 22.9874 3.77513 22.6521 3.93834L17.5219 6.43584L12.7082 0.88575C12.5302 0.680438 12.2718 0.5625 12 0.5625C11.7282 0.5625 11.4699 0.680438 11.2918 0.88575L6.47809 6.4358L1.3479 3.9383C1.0126 3.77513 0.612573 3.82608 0.328979 4.06809C0.0453853 4.31011 -0.0678647 4.6972 0.0405572 5.05392L3.60306 16.7727C3.7231 17.1676 4.08728 17.4375 4.50001 17.4375H19.5C19.9127 17.4375 20.2769 17.1676 20.3969 16.7727L23.9594 5.05397C24.0679 4.69725 23.9546 4.31016 23.671 4.06814ZM18.8051 15.5625H5.19484L2.45964 6.56494L6.30442 8.4367C6.68617 8.62252 7.14488 8.52867 7.42299 8.20805L12 2.93086L16.5771 8.20805C16.8551 8.52872 17.314 8.62247 17.6956 8.4367L21.5404 6.56494L18.8051 15.5625Z" fill="black"/>
+					</svg>
+				</button>
+			</div>
+			<div class="header__menu">
+				<div class="header__top">
+					<nav class="header__nav">
+						<ul>
+							<li class="nav__item">
+								<a class="header__link" href="#">
+									О компании
+								</a>
+							</li>
+							<li class="nav__item">
+								<a class="header__link" href="#">
+									Блог
+								</a>
+							</li>
+							<li class="nav__item">
+								<a class="header__link" href="#">
+									Частые вопросы
+								</a>
+							</li>
+							<li class="nav__item">
+								<a class="header__link" href="#">
+									Продавайте с нами
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__geolocation">
+						<img src="img/ico/geolocation.svg" alt="">
+						<span class="geolocation__text">Выберите</span>
+					</div>
+				</div>
+				<div class="header__center">
+					<div class="center__col-1">
+						<button class="catalog-btn">
+							<div class="catalog__button">
+								<span class="button-line button-line_1"></span>
+								<span class="button-line button-line_large"></span>
+								<span class="button-line button-line_small"></span>
+							</div>
+							<div>Каталог</div>
+						</button>
+						<button class="master-class">Мастер-классы</button>
+						<ul class="header__catalog header-small__catalog">
+							<li class="catalog__item">
+								<a href="#." class="catalog__link">Скидки</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#." class="catalog__link">Новинки</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#." class="catalog__link">Кружево</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#." class="catalog__link">Макраме</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#." class="catalog__link">Ткачество</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#." class="catalog__link">Текстиль для дома</a>
+							</li>
+							<li class="catalog__item premium">
+								<a href="#." class="catalog__link catalog__premium">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+										<path d="M23.671 4.06814C23.3875 3.82613 22.9874 3.77513 22.6521 3.93834L17.5219 6.43584L12.7082 0.88575C12.5302 0.680438 12.2718 0.5625 12 0.5625C11.7282 0.5625 11.4699 0.680438 11.2918 0.88575L6.47809 6.4358L1.3479 3.9383C1.0126 3.77513 0.612573 3.82608 0.328979 4.06809C0.0453853 4.31011 -0.0678647 4.6972 0.0405572 5.05392L3.60306 16.7727C3.7231 17.1676 4.08728 17.4375 4.50001 17.4375H19.5C19.9127 17.4375 20.2769 17.1676 20.3969 16.7727L23.9594 5.05397C24.0679 4.69725 23.9546 4.31016 23.671 4.06814ZM18.8051 15.5625H5.19484L2.45964 6.56494L6.30442 8.4367C6.68617 8.62252 7.14488 8.52867 7.42299 8.20805L12 2.93086L16.5771 8.20805C16.8551 8.52872 17.314 8.62247 17.6956 8.4367L21.5404 6.56494L18.8051 15.5625Z"/>
+									</svg>
+									<span>Премиум</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="header__catalog-1 header-small__catalog-1">
+							<li class="catalog__item">
+								<a href="#." class="catalog__link">Вязание спицами</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#." class="catalog__link">Вязание крючком</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#." class="catalog__link">Машинная вязка</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#." class="catalog__link">Плетение макраме</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#." class="catalog__link">Творим руками</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#." class="catalog__link">Ещё</a>
+							</li>
+						</ul>
+						<form class="header__search">
+							<input type="search" placeholder="Поиск" class="search-input">
+							<button class="search__button">
+								<img src="img/ico/search.svg" alt="">
+							</button>
+						</form>
+					</div>
+					<div class="header__mini-nav header-guest__mini-nav">
+						<button class="header__cart header__cart_1">
+							<img src="img/ico/cart.svg" alt="">
+							<div class="mini-nav__mark">
+								<span>3</span>
+							</div>
+						</button>
+						<a href="#." class="create-store">Создать магазин</a>
+						<a href="#." class="sign-in">Войти</a>
+					</div>
+					<div class="header__burger_mobile">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<ul class="header__catalog">
+						<li class="catalog__item">
+							<a href="#." class="catalog__link">Скидки</a>
+						</li>
+						<li class="catalog__item">
+							<a href="#." class="catalog__link">Новинки</a>
+						</li>
+						<li class="catalog__item">
+							<a href="#." class="catalog__link">Кружево</a>
+						</li>
+						<li class="catalog__item">
+							<a href="#." class="catalog__link">Макраме</a>
+						</li>
+						<li class="catalog__item">
+							<a href="#." class="catalog__link">Ткачество</a>
+						</li>
+						<li class="catalog__item">
+							<a href="#." class="catalog__link">Тёплые носки</a>
+						</li>
+						<li class="catalog__item">
+							<a href="#." class="catalog__link">Текстиль</a>
+						</li>
+						<li class="catalog__item">
+							<a href="#." class="catalog__link">Подарки</a>
+						</li>
+						<li class="catalog__item premium">
+							<a href="#." class="catalog__link catalog__premium">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+									<path d="M23.671 4.06814C23.3875 3.82613 22.9874 3.77513 22.6521 3.93834L17.5219 6.43584L12.7082 0.88575C12.5302 0.680438 12.2718 0.5625 12 0.5625C11.7282 0.5625 11.4699 0.680438 11.2918 0.88575L6.47809 6.4358L1.3479 3.9383C1.0126 3.77513 0.612573 3.82608 0.328979 4.06809C0.0453853 4.31011 -0.0678647 4.6972 0.0405572 5.05392L3.60306 16.7727C3.7231 17.1676 4.08728 17.4375 4.50001 17.4375H19.5C19.9127 17.4375 20.2769 17.1676 20.3969 16.7727L23.9594 5.05397C24.0679 4.69725 23.9546 4.31016 23.671 4.06814ZM18.8051 15.5625H5.19484L2.45964 6.56494L6.30442 8.4367C6.68617 8.62252 7.14488 8.52867 7.42299 8.20805L12 2.93086L16.5771 8.20805C16.8551 8.52872 17.314 8.62247 17.6956 8.4367L21.5404 6.56494L18.8051 15.5625Z"/>
+								</svg>
+								<span>Премиум</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="header__catalog-1">
+						<li class="catalog__item">
+							<a href="#." class="catalog__link">Вязание спицами</a>
+						</li>
+						<li class="catalog__item">
+							<a href="#." class="catalog__link">Вязание крючком</a>
+						</li>
+						<li class="catalog__item">
+							<a href="#." class="catalog__link">Машинная вязка</a>
+						</li>
+						<li class="catalog__item">
+							<a href="#." class="catalog__link">Плетение макраме</a>
+						</li>
+						<li class="catalog__item">
+							<a href="#." class="catalog__link">Творим руками</a>
+						</li>
+						<li class="catalog__item">
+							<a href="#." class="catalog__link">Ещё</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="view-wrapper">
+			<aside class="cart-view">
+				<div class="view__title">В корзине <span>3</span> предмета</div>
+				<div class="cart__items-wrapper">
+					<div class="cart__item">
+						<div class="cart__image">
+							<img src="img/cart-item.jpg" alt="">
+						</div>
+						<div class="cart__wrapper">
+							<div class="cart__wrapper_1">
+								<div class="cart__name">Название товара</div>
+								<div class="cart__cost">000 000 руб</div>
+							</div>
+							<div class="cart__store">Название магазина</div>
+						</div>
+					</div>
+					<div class="cart__item">
+						<div class="cart__image">
+							<img src="img/cart-item.jpg" alt="">
+						</div>
+						<div class="cart__wrapper">
+							<div class="cart__wrapper_1">
+								<div class="cart__name">Название товара</div>
+								<div class="cart__cost">000 000 руб</div>
+							</div>
+							<div class="cart__store">Название магазина</div>
+						</div>
+					</div>
+					<div class="cart__item">
+						<div class="cart__image">
+							<img src="img/cart-item.jpg" alt="">
+						</div>
+						<div class="cart__wrapper">
+							<div class="cart__wrapper_1">
+								<div class="cart__name">Название товара</div>
+								<div class="cart__cost">000 000 руб</div>
+							</div>
+							<div class="cart__store">Название магазина</div>
+						</div>
+					</div>
+					<div class="cart__item">
+						<div class="cart__image">
+							<img src="img/cart-item.jpg" alt="">
+						</div>
+						<div class="cart__wrapper">
+							<div class="cart__wrapper_1">
+								<div class="cart__name">Название товара</div>
+								<div class="cart__cost">000 000 руб</div>
+							</div>
+							<div class="cart__store">Название магазина</div>
+						</div>
+					</div>
+					<div class="cart__item">
+						<div class="cart__image">
+							<img src="img/cart-item.jpg" alt="">
+						</div>
+						<div class="cart__wrapper">
+							<div class="cart__wrapper_1">
+								<div class="cart__name">Название товара</div>
+								<div class="cart__cost">000 000 руб</div>
+							</div>
+							<div class="cart__store">Название магазина</div>
+						</div>
+					</div>
+				</div>
+				<hr class="cart-hr">
+				<div class="cart__result">
+					<div class="result__text">Итого</div>
+					<div class="result__cost">000 000 руб</div>
+				</div>
+				<a href="" class="cart__button">Перейти в корзину</a>
+			</aside>
+			<aside class="notifications-view">
+				<div class="notifications__row">
+					<div class="view__title">Уведомления</div>
+					<a class="notifications__settings" href="">Настройки</a>
+				</div>
+				<div class="notifications__items">
+					<div class="notifications__item">
+						<div class="notifications__image">
+							<img src="img/image_1.jpg" alt="notification image">
+						</div>
+						<div class="notifications__text">
+							<div class="notifications__title">Заголовок</div>
+							<div class="notifications__subtitle">Уточняющий текст</div>
+						</div>
+					</div>
+					<hr class="notifications__hr">
+					<div class="notifications__item">
+						<div class="notifications__image">
+							<img src="img/image_1.jpg" alt="notification image">
+						</div>
+						<div class="notifications__text">
+							<div class="notifications__title">Заголовок</div>
+							<div class="notifications__subtitle">Уточняющий текст</div>
+						</div>
+					</div>
+					<hr class="notifications__hr">
+					<div class="notifications__item">
+						<div class="notifications__image">
+							<img src="img/image_1.jpg" alt="notification image">
+						</div>
+						<div class="notifications__text">
+							<div class="notifications__title">Заголовок</div>
+							<div class="notifications__subtitle">Уточняющий текст</div>
+						</div>
+					</div>
+					<hr class="notifications__hr">
+				</div>
+				<div class="notifications__all-wrapper">
+					<a href="" class="notifications__all">Все уведомления</a>
+				</div>
+			</aside>
+			<aside class="message-view">
+				<div class="view__title">Сообщения</div>
+				<div class="message__items">
+					<div class="message__item">
+						<div class="message__image">
+							<img src="img/image_1.jpg" alt="message image">
+						</div>
+						<div class="message__text">
+							<div class="message__title">Заголовок письма</div>
+							<div class="message__subtitle">Первые строки письма Первые строки письма Первые строки письма Первые строки письма Первые строки письма</div>
+						</div>
+					</div>
+					<hr class="message__hr">
+					<div class="message__item">
+						<div class="message__image">
+							<img src="img/image_1.jpg" alt="message image">
+						</div>
+						<div class="message__text">
+							<div class="message__title">Заголовок письма</div>
+							<div class="message__subtitle">Первые строки письма Первые строки письма Первые строки письма Первые строки письма Первые строки письма</div>
+						</div>
+					</div>
+					<hr class="message__hr">
+					<div class="message__item">
+						<div class="message__image">
+							<img src="img/image_1.jpg" alt="message image">
+						</div>
+						<div class="message__text">
+							<div class="message__title">Заголовок письма</div>
+							<div class="message__subtitle">Первые строки письма Первые строки письма Первые строки письма Первые строки письма Первые строки письма</div>
+						</div>
+					</div>
+					<hr class="message__hr">
+				</div>
+				<div class="message__all-wrapper">
+					<a href="" class="message__all">Все сообщения</a>
+				</div>
+			</aside>
+			<aside class="user-view">
+				<div class="user__header">
+					<a class="user__avatar" href="#">
+						<img src="img/user-logo.jpg" alt="">
+					</a>
+					<div class="user__text_1">
+						<div class="user__name">Имя Фамилия</div>
+						<a class="user__profile-link" href="">Профиль</a>
+					</div>
+				</div>
+				<hr class="user__hr">
+				<ul class="user__body">
+					<li class="user__item">
+						<a class="user__link" href="">Настройки</a>
+					</li>
+					<li class="user__item">
+						<a class="user__link" href="">Мой магазин</a>
+					</li>
+					<li class="user__item">
+						<a class="user__link" href="">Мои заказы</a>
+					</li>
+					<li class="user__item">
+						<a class="user__link" href="">Отзывы</a>
+					</li>
+					<hr class="user__hr user__hr_1">
+					<li class="user__item user__exit">
+						<a class="user__link" href="">Выйти</a>
+					</li>
+				</ul>
+			</aside>
+		</div>
+	</header>
+	<nav class="bottom-navigation">
+		<div class="bottom-navigation__container">
+			<div class="bottom-navigation__item">
+				<div class="bottom-navigation__image">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0)">
+					<path d="M29.6809 12.1913L15.4605 1.77933C15.1862 1.57859 14.8137 1.57859 14.5396 1.77933L0.319016 12.1913C-0.0283279 12.4456 -0.103797 12.9334 0.150559 13.2807C0.404914 13.628 0.892707 13.7034 1.23999 13.4492L15 3.37431L28.76 13.4491C28.8987 13.5508 29.06 13.5997 29.2198 13.5997C29.4598 13.5997 29.6966 13.4892 29.8493 13.2806C30.1037 12.9334 30.0283 12.4456 29.6809 12.1913Z" fill="#999999"/>
+					<path d="M25.9129 13.6256C25.4824 13.6256 25.1334 13.9746 25.1334 14.405V26.8122H18.8977V20.0396C18.8977 17.8904 17.1492 16.1419 15.0001 16.1419C12.851 16.1419 11.1024 17.8905 11.1024 20.0396V26.8123H4.86668V14.4051C4.86668 13.9746 4.51764 13.6256 4.08721 13.6256C3.65678 13.6256 3.30774 13.9746 3.30774 14.4051V27.5918C3.30774 28.0223 3.65678 28.3713 4.08721 28.3713H11.8819C12.2918 28.3713 12.6273 28.0546 12.6583 27.6525C12.6602 27.6343 12.6614 27.6144 12.6614 27.5918V20.0396C12.6614 18.7501 13.7105 17.7009 15.0001 17.7009C16.2897 17.7009 17.3388 18.7501 17.3388 20.0396V27.5918C17.3388 27.6142 17.3399 27.6338 17.3418 27.6518C17.3725 28.0542 17.7081 28.3713 18.1182 28.3713H25.9129C26.3434 28.3713 26.6924 28.0223 26.6924 27.5918V14.4051C26.6923 13.9746 26.3433 13.6256 25.9129 13.6256Z" fill="#999999"/>
+					</g>
+					<defs>
+					<clipPath id="clip0">
+					<rect width="30" height="30" fill="white"/>
+					</clipPath>
+					</defs>
+					</svg>
+				</div>
+				<div class="bottom-navigation__name">Главная</div>
+			</div>
+			<div class="bottom-navigation__item">
+				<div class="bottom-navigation__image">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M28.5035 25.8934H8.44267C7.61587 25.8934 6.94574 25.2233 6.94574 24.3965C6.94574 23.5697 7.61587 22.8996 8.44267 22.8996H28.503C29.3298 22.8996 30 23.5697 30 24.3965C30 25.2233 29.3303 25.8934 28.5035 25.8934Z" fill="#999999"/>
+					<path d="M28.5035 16.4972H8.44267C7.61587 16.4972 6.94574 15.8271 6.94574 15.0003C6.94574 14.1734 7.61587 13.5033 8.44267 13.5033H28.503C29.3298 13.5033 30 14.1734 30 15.0003C30.0005 15.8271 29.3303 16.4972 28.5035 16.4972Z" fill="#999999"/>
+					<path d="M28.5035 7.10094H8.44267C7.61587 7.10094 6.94574 6.43082 6.94574 5.60401C6.94574 4.77721 7.61587 4.10708 8.44267 4.10708H28.503C29.3298 4.10708 30 4.77721 30 5.60401C30 6.43082 29.3303 7.10094 28.5035 7.10094Z" fill="#999999"/>
+					<path d="M2.01038 7.73015C3.12068 7.73015 4.02076 6.83008 4.02076 5.71978C4.02076 4.60947 3.12068 3.7094 2.01038 3.7094C0.900077 3.7094 0 4.60947 0 5.71978C0 6.83008 0.900077 7.73015 2.01038 7.73015Z" fill="#999999"/>
+					<path d="M2.01038 17.0106C3.12068 17.0106 4.02076 16.1106 4.02076 15.0003C4.02076 13.8899 3.12068 12.9899 2.01038 12.9899C0.900077 12.9899 0 13.8899 0 15.0003C0 16.1106 0.900077 17.0106 2.01038 17.0106Z" fill="#999999"/>
+					<path d="M2.01038 26.2911C3.12068 26.2911 4.02076 25.391 4.02076 24.2807C4.02076 23.1704 3.12068 22.2703 2.01038 22.2703C0.900077 22.2703 0 23.1704 0 24.2807C0 25.391 0.900077 26.2911 2.01038 26.2911Z" fill="#999999"/>
+					</svg>
+				</div>
+				<div class="bottom-navigation__name">Каталог</div>
+			</div>
+			<div class="bottom-navigation__item">
+				<div class="bottom-navigation__image">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M9.66568 19.3948H9.66705C9.6682 19.3948 9.66934 19.3945 9.67049 19.3945H25.6055C25.9978 19.3945 26.3427 19.1343 26.4505 18.7571L29.9661 6.45241C30.0419 6.18714 29.9888 5.90195 29.8228 5.68176C29.6567 5.46158 29.3969 5.33203 29.1211 5.33203H7.6387L7.01042 2.50466C6.92093 2.10251 6.56433 1.81641 6.15234 1.81641H0.878906C0.393448 1.81641 0 2.20986 0 2.69531C0 3.18077 0.393448 3.57422 0.878906 3.57422H5.44739C5.55862 4.07524 8.45398 17.1046 8.62061 17.8542C7.68654 18.2602 7.03125 19.1915 7.03125 20.2734C7.03125 21.7273 8.21411 22.9102 9.66797 22.9102H25.6055C26.0909 22.9102 26.4844 22.5167 26.4844 22.0313C26.4844 21.5458 26.0909 21.1523 25.6055 21.1523H9.66797C9.18343 21.1523 8.78906 20.758 8.78906 20.2734C8.78906 19.7896 9.18205 19.3959 9.66568 19.3948ZM27.9559 7.08985L24.9424 17.6367H10.3729L8.02917 7.08985H27.9559Z" fill="#999999"/>
+					<path d="M8.78906 25.5469C8.78906 27.0007 9.97192 28.1836 11.4258 28.1836C12.8796 28.1836 14.0625 27.0007 14.0625 25.5469C14.0625 24.093 12.8796 22.9102 11.4258 22.9102C9.97192 22.9102 8.78906 24.093 8.78906 25.5469ZM11.4258 24.668C11.9103 24.668 12.3047 25.0623 12.3047 25.5469C12.3047 26.0314 11.9103 26.4258 11.4258 26.4258C10.9412 26.4258 10.5469 26.0314 10.5469 25.5469C10.5469 25.0623 10.9412 24.668 11.4258 24.668Z" fill="#999999"/>
+					<path d="M21.2109 25.5469C21.2109 27.0007 22.3938 28.1836 23.8477 28.1836C25.3015 28.1836 26.4844 27.0007 26.4844 25.5469C26.4844 24.093 25.3015 22.9102 23.8477 22.9102C22.3938 22.9102 21.2109 24.093 21.2109 25.5469ZM23.8477 24.668C24.3322 24.668 24.7266 25.0623 24.7266 25.5469C24.7266 26.0314 24.3322 26.4258 23.8477 26.4258C23.3631 26.4258 22.9688 26.0314 22.9688 25.5469C22.9688 25.0623 23.3631 24.668 23.8477 24.668Z" fill="#999999"/>
+					</svg>
+				</div>
+				<div class="bottom-navigation__name">Корзина</div>
+			</div>
+			<div class="bottom-navigation__item">
+				<div class="bottom-navigation__image">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+					<g clip-path="url(#clip0)">
+					<path d="M27.1875 3.74998H2.81252C1.2616 3.74998 0 5.01158 0 6.5625V23.4375C0 24.9884 1.2616 26.25 2.81252 26.25H27.1875C28.7384 26.25 30 24.9884 30 23.4375V6.5625C30 5.01158 28.7384 3.74998 27.1875 3.74998ZM27.1875 5.62497C27.3149 5.62497 27.436 5.6514 27.5468 5.69755L15 16.572L2.45313 5.69755C2.56391 5.65146 2.68508 5.62497 2.81246 5.62497H27.1875ZM27.1875 24.375H2.81252C2.29525 24.375 1.87499 23.9548 1.87499 23.4374V7.67851L14.3857 18.5211C14.5624 18.674 14.7812 18.75 15 18.75C15.2188 18.75 15.4376 18.674 15.6143 18.5211L28.125 7.67851V23.4375C28.1249 23.9548 27.7047 24.375 27.1875 24.375Z" fill="#999999"/>
+					</g>
+					<defs>
+					<clipPath id="clip0">
+					<rect width="30" height="30" fill="white"/>
+					</clipPath>
+					</defs>
+					</svg>
+					<div class="bottom-navigation__notifications">
+						<span>100</span>
+					</div>
+				</div>
+				<div class="bottom-navigation__name">Сообщения</div>
+			</div>
+			<div class="bottom-navigation__item">
+				<div class="bottom-navigation__image">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14.7862 14.4511C16.7715 14.4511 18.4904 13.7391 19.8953 12.3342C21.2997 10.9296 22.012 9.21089 22.012 7.22534C22.012 5.24048 21.3 3.52158 19.8951 2.11647C18.4902 0.712051 16.7713 0 14.7862 0C12.8007 0 11.082 0.712051 9.67735 2.1167C8.27271 3.52135 7.56042 5.24025 7.56042 7.22534C7.56042 9.21089 8.27271 10.9298 9.67735 12.3344C11.0825 13.7389 12.8014 14.4511 14.7862 14.4511ZM10.9206 3.35976C11.9984 2.28195 13.2628 1.75804 14.7862 1.75804C16.3094 1.75804 17.574 2.28195 18.652 3.35976C19.7298 4.43779 20.254 5.70236 20.254 7.22534C20.254 8.74878 19.7298 10.0131 18.652 11.0912C17.574 12.1692 16.3094 12.6931 14.7862 12.6931C13.2632 12.6931 11.9989 12.169 10.9206 11.0912C9.84261 10.0134 9.31847 8.74878 9.31847 7.22534C9.31847 5.70236 9.84261 4.43779 10.9206 3.35976Z" fill="#999999"/>
+					<path d="M27.4294 23.0685C27.3889 22.484 27.307 21.8463 27.1864 21.1729C27.0646 20.4945 26.9078 19.8532 26.7201 19.267C26.526 18.6612 26.2626 18.0629 25.9364 17.4895C25.5984 16.8945 25.201 16.3763 24.7552 15.9499C24.2889 15.5038 23.7181 15.1451 23.058 14.8835C22.4002 14.6233 21.6712 14.4914 20.8914 14.4914C20.5852 14.4914 20.289 14.6171 19.717 14.9895C19.365 15.219 18.9532 15.4845 18.4937 15.7782C18.1007 16.0286 17.5683 16.2632 16.9107 16.4756C16.2691 16.6832 15.6178 16.7885 14.9746 16.7885C14.3319 16.7885 13.6805 16.6832 13.0385 16.4756C12.3816 16.2634 11.849 16.0288 11.4567 15.7784C11.0014 15.4875 10.5894 15.222 10.2322 14.9892C9.66064 14.6169 9.36447 14.4912 9.05823 14.4912C8.2782 14.4912 7.54944 14.6233 6.89186 14.8837C6.23222 15.1449 5.66116 15.5035 5.19447 15.9501C4.74861 16.3767 4.35127 16.8947 4.01344 17.4895C3.68774 18.0629 3.42407 18.661 3.22998 19.2673C3.04253 19.8534 2.88574 20.4945 2.76398 21.1729C2.64313 21.8454 2.56142 22.4833 2.5209 23.0692C2.48108 23.6421 2.46094 24.2384 2.46094 24.8408C2.46094 26.4068 2.95876 27.6746 3.94043 28.6095C4.90997 29.5322 6.19263 30 7.75291 30H22.1981C23.7579 30 25.0406 29.5322 26.0104 28.6095C26.9923 27.6752 27.4901 26.407 27.4901 24.8405C27.4899 24.2361 27.4695 23.6398 27.4294 23.0685ZM24.7982 27.3358C24.1576 27.9456 23.307 28.242 22.1979 28.242H7.75291C6.64352 28.242 5.793 27.9456 5.15259 27.336C4.52431 26.738 4.21898 25.9216 4.21898 24.8408C4.21898 24.2786 4.23752 23.7236 4.2746 23.1908C4.31076 22.668 4.38469 22.0937 4.49432 21.4835C4.60258 20.8809 4.74037 20.3153 4.90425 19.8033C5.06149 19.3124 5.27596 18.8262 5.54192 18.3579C5.79575 17.9116 6.0878 17.5287 6.41006 17.2202C6.7115 16.9315 7.09145 16.6953 7.53914 16.5182C7.95319 16.3543 8.4185 16.2646 8.92365 16.2511C8.98521 16.2838 9.09485 16.3463 9.27246 16.4621C9.63387 16.6976 10.0504 16.9663 10.5109 17.2604C11.03 17.5914 11.6988 17.8903 12.4979 18.1483C13.3147 18.4124 14.1479 18.5465 14.9748 18.5465C15.8018 18.5465 16.6351 18.4124 17.4516 18.1485C18.2513 17.8901 18.9198 17.5914 19.4396 17.26C19.9109 16.9588 20.3158 16.6978 20.6772 16.4621C20.8548 16.3465 20.9644 16.2838 21.026 16.2511C21.5314 16.2646 21.9967 16.3543 22.411 16.5182C22.8584 16.6953 23.2384 16.9318 23.5398 17.2202C23.8621 17.5285 24.1541 17.9114 24.408 18.3582C24.6741 18.8262 24.8888 19.3126 25.0459 19.8031C25.21 20.3158 25.348 20.8811 25.456 21.4833C25.5654 22.0947 25.6396 22.6691 25.6757 23.191V23.1915C25.713 23.7222 25.7318 24.277 25.732 24.8408C25.7318 25.9218 25.4265 26.738 24.7982 27.3358Z" fill="#999999"/>
+					</svg>
+					<div class="bottom-navigation__notifications">
+						<span>5</span>
+					</div>
+				</div>
+				<div class="bottom-navigation__name">Профиль</div>
+			</div>
+		</div>
+	</nav>
+	<div class="header__catalog-menu-wrapper">
+		<div class="header__catalog-menu">
+			<div class="category__names">
+				<button class="category__name catalog__clothes category__name_active">Одежда</button>
+				<button class="category__name catalog__baby-clothes">Детская одежда</button>
+				<button class="category__name catalog__shoes">Обувь</button>
+				<button class="category__name catalog__accessories">Аксессуары</button>
+				<button class="category__name catalog__ornamentation">Украшения</button>
+				<button class="category__name catalog__toys">Игрушки</button>
+				<button class="category__name catalog__home-interior">Дом и интерьер</button>
+				<button class="category__name catalog__pets">Для домашних животных</button>
+				<button class="category__name catalog__wedding">Свадьба</button>
+				<button class="category__name catalog__presents">Подарки</button>
+				<div class="category__spacing-block"></div>
+					<button class="category__name catalog__master-class">Мастер-классы</button>
+					<button class="category__name catalog__order">Услуги</button>
+			</div>
+			<div class="category category__clothes category_visible">
+				<div class="category__top">
+					<a href="#.">Новинки</a>
+					<a href="#.">Скидки</a>
+					<a href="#.">Для беременных</a>
+					<a href="#.">Одежда для кормления</a>
+					<a href="#.">Свадьба</a>
+				</div>
+				<div class="category__row">
+					<div class="category__col">
+						<div class="category__title">
+							Женщины
+						</div>
+						<a class="category__link" href="#.">Блузки и рубашки</a>
+						<a class="category__link" href="#.">Брюки и шорты</a>
+						<a class="category__link" href="#.">Верхняя одежда</a>
+						<a class="category__link" href="#.">Джемперы и свитеры</a>
+						<a class="category__link" href="#.">Жакеты и жилеты</a>
+						<a class="category__link" href="#.">Комбинезоны</a>
+						<a class="category__link" href="#.">Костюмы и комплекты</a>
+						<a class="category__link" href="#.">Купальники</a>
+						<a class="category__link" href="#.">Платья и сарафаны</a>
+						<a class="category__link" href="#.">Пончо и накидки</a>
+						<a class="category__link" href="#.">Футболки и топы</a>
+						<a class="category__link" href="#.">Юбки</a>
+						<div class="category__spacing-1">
+							<a class="category__link" href="#.">Бельё</a>
+							<a class="category__link" href="#.">Большие размеры</a>
+							<a class="category__link" href="#.">Домашняя одежда</a>
+							<a class="category__link" href="#.">Спортивная одежда</a>
+						</div>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Мужчины
+						</div>
+						<a class="category__link" href="#.">Брюки и шорты</a>
+						<a class="category__link" href="#.">Верхняя одежда</a>
+						<a class="category__link" href="#.">Джемперы и свитеры</a>
+						<a class="category__link" href="#.">Жакеты и жилеты</a>
+						<a class="category__link" href="#.">Костюмы и комплекты</a>
+						<a class="category__link" href="#.">Купальные плавки и шорты</a>
+						<a class="category__link" href="#.">Рубашки и пиджаки</a>
+						<a class="category__link" href="#.">Футболки и майки</a>
+						<div class="category__spacing-1">
+							<a class="category__link" href="#.">Бельё</a>
+							<a class="category__link" href="#.">Большие размеры</a>
+							<a class="category__link" href="#.">Домашняя одежда</a>
+							<a class="category__link" href="#.">Спортивная одежда</a>
+						</div>
+						<div class="category__spacing">
+							<div class="category__title">
+								Домашняя одежда
+							</div>
+							<a class="category__link" href="#.">Домашние костюмы</a>
+							<a class="category__link" href="#.">Пижамы</a>
+							<a class="category__link" href="#.">Сорочки</a>
+							<a class="category__link" href="#.">Халаты</a>
+						</div>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Бельё
+						</div>
+						<a class="category__link" href="#.">Боди</a>
+						<a class="category__link" href="#.">Бюстгалтеры и бюстье</a>
+						<a class="category__link" href="#.">Гамаши</a>
+						<a class="category__link" href="#.">Гетры</a>
+						<a class="category__link" href="#.">Гольфы</a>
+						<a class="category__link" href="#.">Кальсоны</a>
+						<a class="category__link" href="#.">Колготки</a>
+						<a class="category__link" href="#.">Корсеты</a>
+						<a class="category__link" href="#.">Комбидрессы</a>
+						<a class="category__link" href="#.">Комбинации и неглиже</a>
+						<a class="category__link" href="#.">Комплекты белья</a>
+						<a class="category__link" href="#.">Майки</a>
+						<a class="category__link" href="#.">Нижние юбки</a>
+						<a class="category__link" href="#.">Носки</a>
+						<a class="category__link" href="#.">Подвязки</a>
+						<a class="category__link" href="#.">Подследники</a>
+						<a class="category__link" href="#.">Пояса для чулок</a>
+						<a class="category__link" href="#.">Термобелье</a>
+						<a class="category__link" href="#.">Трусы</a>
+						<a class="category__link" href="#.">Чулки</a>
+					</div>
+				</div>
+			</div>
+			<div class="category category__baby-clothes">
+				<div class="category__top">
+					<a href="#.">Новинки</a>
+					<a href="#.">Скидки</a>
+					<a href="#.">Для младенцев</a>
+				</div>
+				<div class="category__row">
+					<div class="category__col">
+						<div class="category__title">
+							Девочки
+						</div>
+						<a class="category__link" href="#.">Блузки и рубашки</a>
+						<a class="category__link" href="#.">Брюки и шорты</a>
+						<a class="category__link" href="#.">Верхняя одежда</a>
+						<a class="category__link" href="#.">Джемперы и свитеры</a>
+						<a class="category__link" href="#.">Жакеты и жилеты</a>
+						<a class="category__link" href="#.">Карнавальные костюмы</a>
+						<a class="category__link" href="#.">Комбинезоны и полукомбинезоны</a>
+						<a class="category__link" href="#.">Костюмы и комплекты</a>
+						<a class="category__link" href="#.">Купальники</a>
+						<a class="category__link" href="#.">Платья и сарафаны</a>
+						<a class="category__link" href="#.">Пончо и накидки</a>
+						<a class="category__link" href="#.">Футболки и топы</a>
+						<a class="category__link" href="#.">Юбки</a>
+						<div class="category__spacing-1">
+							<a class="category__link" href="#.">Бельё</a>
+							<a class="category__link" href="#.">Домашняя одежда</a>
+							<a class="category__link" href="#.">Спортивная одежда</a>
+						</div>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Мальчики
+						</div>
+						<a class="category__link" href="#.">Брюки и шорты</a>
+						<a class="category__link" href="#.">Верхняя одежда</a>
+						<a class="category__link" href="#.">Джемперы и свитеры</a>
+						<a class="category__link" href="#.">Жакеты и жилеты</a>
+						<a class="category__link" href="#.">Карнавальные костюмы</a>
+						<a class="category__link" href="#.">Комбинезоны и полукомбинезоны</a>
+						<a class="category__link" href="#.">Костюмы и комплекты</a>
+						<a class="category__link" href="#.">Купальные плавки и шорты</a>
+						<a class="category__link" href="#.">Рубашки и пиджаки</a>
+						<a class="category__link" href="#.">Футболки и майки</a>
+						<div class="category__spacing-1">
+							<a class="category__link" href="#.">Бельё</a>
+							<a class="category__link" href="#.">Домашняя одежда</a>
+							<a class="category__link" href="#.">Спортивная одежда</a>
+						</div>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Новорожденные
+						</div>
+						<a class="category__link" href="#.">Боди и ползунки</a>
+						<a class="category__link" href="#.">Брюки и шорты</a>
+						<a class="category__link" href="#.">Верхняя одежда</a>
+						<a class="category__link" href="#.">Для крещения</a>
+						<a class="category__link" href="#.">Жакеты и жилеты</a>
+						<a class="category__link" href="#.">Карнавальные костюмы</a>
+						<a class="category__link" href="#.">Комбинезоны и полукомбинезоны</a>
+						<a class="category__link" href="#.">Конверты</a>
+						<a class="category__link" href="#.">Костюмы и комплекты</a>
+						<a class="category__link" href="#.">Кофточки и джемперы</a>
+						<a class="category__link" href="#.">Носки и колготки</a>
+						<a class="category__link" href="#.">Платья и юбки</a>
+						<a class="category__link" href="#.">Распагонки</a>
+						<a class="category__link" href="#.">Футболки и топы</a>
+						<div class="category__spacing">
+							<div class="category__title">
+								Для крещения
+							</div>
+							<a class="category__link" href="#.">Новорожденные (0-1 год)</a>
+							<a class="category__link" href="#.">Девочки (старше 1 года)</a>
+							<a class="category__link" href="#.">Мальчики (старше 1 года)</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="category category__shoes">
+				<div class="category__row">
+					<div class="category__col">
+						<div class="category__title">
+							Женщины
+						</div>
+						<a class="category__link" href="#.">Балетки</a>
+						<a class="category__link" href="#.">Босоножки</a>
+						<a class="category__link" href="#.">Ботильоны</a>
+						<a class="category__link" href="#.">Ботинки и полуботинки</a>
+						<a class="category__link" href="#.">Ботфорты</a>
+						<a class="category__link" href="#.">Кеды</a>
+						<a class="category__link" href="#.">Мокасины</a>
+						<a class="category__link" href="#.">Сапоги и полусапожки</a>
+						<a class="category__link" href="#.">Сабо и мюли</a>
+						<a class="category__link" href="#.">сандалии</a>
+						<a class="category__link" href="#.">Слипоны</a>
+						<a class="category__link" href="#.">Туфли и лоферы</a>
+						<a class="category__link" href="#.">Угги</a>
+						<a class="category__link" href="#.">Эспадрильи</a>
+						<div class="category__spacing">
+							<div class="category__title">
+								Мужчины
+							</div>
+							<a class="category__link" href="#.">Ботинки и полуботинки</a>
+							<a class="category__link" href="#.">Кеды</a>
+							<a class="category__link" href="#.">Мокасины</a>
+							<a class="category__link" href="#.">Сапоги</a>
+							<a class="category__link" href="#.">Сандалии</a>
+							<a class="category__link" href="#.">Слипоны</a>
+							<a class="category__link" href="#.">Туфли и лоферы</a>
+							<a class="category__link" href="#.">Угги</a>
+						</div>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Девочки
+						</div>
+						<a class="category__link" href="#.">Балетки</a>
+						<a class="category__link" href="#.">Босоножки</a>
+						<a class="category__link" href="#.">Ботильоны</a>
+						<a class="category__link" href="#.">Ботинки и полуботинки</a>
+						<a class="category__link" href="#.">Ботфорты</a>
+						<a class="category__link" href="#.">Кеды</a>
+						<a class="category__link" href="#.">Мокасины</a>
+						<a class="category__link" href="#.">Сапоги и полусапожки</a>
+						<a class="category__link" href="#.">Сабо и мюли</a>
+						<a class="category__link" href="#.">сандалии</a>
+						<a class="category__link" href="#.">Слипоны</a>
+						<a class="category__link" href="#.">Туфли и лоферы</a>
+						<a class="category__link" href="#.">Угги</a>
+						<a class="category__link" href="#.">Эспадрильи</a>
+						<div class="category__spacing">
+							<div class="category__title">
+								Мальчики
+							</div>
+							<a class="category__link" href="#.">Ботинки и полуботинки</a>
+							<a class="category__link" href="#.">Кеды</a>
+							<a class="category__link" href="#.">Мокасины</a>
+							<a class="category__link" href="#.">Сапоги</a>
+							<a class="category__link" href="#.">Сандалии</a>
+							<a class="category__link" href="#.">Слипоны</a>
+							<a class="category__link" href="#.">Туфли и лоферы</a>
+							<a class="category__link" href="#.">Угги</a>
+						</div>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Новорожденные
+						</div>
+							<a class="category__link" href="#.">Босоножки</a>
+							<a class="category__link" href="#.">Ботинки и полуботинки</a>
+							<a class="category__link" href="#.">Кеды и кроссовки</a>
+							<a class="category__link" href="#.">Пинетки</a>
+							<a class="category__link" href="#.">Сапоги и полусапожки</a>
+							<a class="category__link" href="#.">Туфли</a>
+							<a class="category__link" href="#.">Тапочки</a>
+							<a class="category__link" href="#.">Угги</a>
+						<div class="category__spacing">
+							<div class="category__title">
+								Домашняя обувь
+							</div>
+							<a class="category__link" href="#.">Подследники</a>
+							<a class="category__link" href="#.">Тапочки</a>
+							<a class="category__link" href="#.">Чуни и угги</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="category category__accessories">
+				<div class="category__top">
+					<a href="#.">Новинки</a>
+					<a href="#.">Скидки</a>
+					<a href="#.">Аксессуары для спорта</a>
+					<a href="#.">Лечебные аксессуары</a>
+					<a href="#.">Свадебные аксессуары</a>
+				</div>
+				<div class="category__row">
+					<div class="category__col">
+						<div class="category__title">
+							Головные уборы
+						</div>
+						<a class="category__link" href="#.">Балаклавы</a>
+						<a class="category__link" href="#.">Береты</a>
+						<a class="category__link" href="#.">Капоры</a>
+						<a class="category__link" href="#.">Комплекты</a>
+						<a class="category__link" href="#.">Наушники</a>
+						<a class="category__link" href="#.">Панамы</a>
+						<a class="category__link" href="#.">Повязки на голову</a>
+						<a class="category__link" href="#.">Чалмы</a>
+						<a class="category__link" href="#.">Шапки</a>
+						<a class="category__link" href="#.">Шлемы</a>
+						<a class="category__link" href="#.">Шляпы</a>
+						<div class="category__spacing">
+							<div class="category__title">
+								Декор для одежны
+							</div>
+						</div>
+						<div class="category__spacing">
+							<div class="category__title">
+								Декоративные воротнички
+							</div>
+							<a class="category__link" href="#.">Воротнички</a>
+							<a class="category__link" href="#.">Горжетки</a>
+							<a class="category__link" href="#.">Жабо</a>
+						</div>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Носки и гольфы
+						</div>
+						<a class="category__link" href="#.">Гетры</a>
+						<a class="category__link" href="#.">Гольфы</a>
+						<a class="category__link" href="#.">Наколенники</a>
+						<a class="category__link" href="#.">Носки</a>
+						<a class="category__link" href="#.">Подследники</a>
+						<div class="category__spacing">
+							<div class="category__title">
+								Перчатки и варежки
+							</div>
+							<a class="category__link" href="#.">Варежки</a>
+							<a class="category__link" href="#.">Митенки</a>
+							<a class="category__link" href="#.">Муфты</a>
+							<a class="category__link" href="#.">Перчатки</a>
+						</div>
+						<div class="category__spacing">
+							<div class="category__title">
+								Платки и шали
+							</div>
+							<a class="category__link" href="#.">Бактусы</a>
+							<a class="category__link" href="#.">Косынки</a>
+							<a class="category__link" href="#.">Накидки</a>
+							<a class="category__link" href="#.">Палантины</a>
+							<a class="category__link" href="#.">Пелерины</a>
+							<a class="category__link" href="#.">Шали</a>
+						</div>
+						<div class="category__spacing">
+							<div class="category__title">
+								Ремни и пояса
+							</div>
+							<a class="category__link" href="#.">Пояса</a>
+							<a class="category__link" href="#.">Портупеи</a>
+							<a class="category__link" href="#.">Ремни</a>
+						</div>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Сумки и рюкзаки
+						</div>
+						<a class="category__link" href="#.">Авоськи</a>
+						<a class="category__link" href="#.">Барсетки</a>
+						<a class="category__link" href="#.">Визитницы</a>
+						<a class="category__link" href="#.">Клатчи</a>
+						<a class="category__link" href="#.">Ключницы</a>
+						<a class="category__link" href="#.">Косметички</a>
+						<a class="category__link" href="#.">Кошельки</a>
+						<a class="category__link" href="#.">Несессеры</a>
+						<a class="category__link" href="#.">Пеналы</a>
+						<a class="category__link" href="#.">Пляжные сумки</a>
+						<a class="category__link" href="#.">Подарочные сумки</a>
+						<a class="category__link" href="#.">Поясные сумки</a>
+						<a class="category__link" href="#.">Рюкзаки и ранцы</a>
+						<a class="category__link" href="#.">Сумки</a>
+						<a class="category__link" href="#.">Сумки для планшетов/ноутбуков</a>
+						<a class="category__link" href="#.">Хозяйственные сумки</a>
+						<a class="category__link" href="#.">Чехлы для документов</a>
+						<a class="category__link" href="#.">Чехлы для очков</a>
+						<a class="category__link" href="#.">Чехлы для планетов-ноутбуков</a>
+						<a class="category__link" href="#.">Чехлы для телефонов</a>
+						<a class="category__link" href="#.">Шопперы</a>
+						<div class="category__spacing">
+							<div class="category__title">
+								Шарфы и снуды
+							</div>
+							<a class="category__link" href="#.">Шарфы</a>
+							<a class="category__link" href="#.">Снуды</a>
+							<a class="category__link" href="#.">Хомуты</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="category category__ornamentation">
+				<div class="category__row">
+					<div class="category__col">
+						<div class="category__title">
+							Украшения
+						</div>
+						<a class="category__link" href="#.">Браслеты</a>
+						<a class="category__link" href="#.">Брелоки</a>
+						<a class="category__link" href="#.">Броши</a>
+						<a class="category__link" href="#.">Булавки</a>
+						<a class="category__link" href="#.">Заколки</a>
+						<a class="category__link" href="#.">Зонтики</a>
+						<a class="category__link" href="#.">Клипсы</a>
+						<a class="category__link" href="#.">Колье</a>
+						<a class="category__link" href="#.">Кольца</a>
+						<a class="category__link" href="#.">Ободки</a>
+						<a class="category__link" href="#.">Резинки для волос</a>
+						<a class="category__link" href="#.">Серьги</a>
+					</div>
+				</div>
+			</div>
+			<div class="category category__toys">
+				<div class="category__row">
+					<div class="category__col">
+						<div class="category__title">Куклы</div>
+						<a class="category__link" href="#.">Авторские куклы</a>
+						<a class="category__link" href="#.">Интерьерные куклы</a>
+						<a class="category__link" href="#.">Детские куклы и пупсы</a>
+						<a class="category__link" href="#.">Тильда куклы</a>
+						<div class="category__spacing">
+							<div class="category__title">Одежда для кукол</div>
+						</div>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Мягкие игрушки
+						</div>
+						<a class="category__link" href="#.">Игрушки амигурурми</a>
+						<a class="category__link" href="#.">Игрушки спицами</a>
+						<a class="category__link" href="#.">Тедди игрушки</a>
+						<a class="category__link" href="#.">Тильда игрушки</a>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Развивающие игрушки
+						</div>
+						<a class="category__link" href="#.">Грызнки и погремушки</a>
+						<a class="category__link" href="#.">Кукольный театр</a>
+						<a class="category__link" href="#.">Кубики и книжки</a>
+						<a class="category__link" href="#.">Коврики и подвески</a>
+						<a class="category__link" href="#.">Миниатюры</a>
+					</div>
+				</div>
+			</div>
+			<div class="category category__home-interior">
+				<div class="category__top">
+					<a href="#.">Новинки</a>
+					<a href="#.">Скидки</a>
+					<a href="#.">Аксессуары для спорта</a>
+					<a href="#.">Лечебные аксессуары</a>
+					<a href="#.">Свадебные аксессуары</a>
+				</div>
+				<div class="category__row">
+					<div class="category__col">
+						<div class="category__title">Декор и организация пространства</div>
+						<a class="category__link" href="#.">Декор и элементы интерьера</a>
+						<a class="category__link" href="#.">Организация и хранение вещей</a>
+						<a class="category__link" href="#.">Освещение</a>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Текстиль
+						</div>
+						<a class="category__link" href="#.">Декоративные салфетки</a>
+						<a class="category__link" href="#.">Кухонный текстиль</a>
+						<a class="category__link" href="#.">Пледы и постельное белье</a>
+						<a class="category__link" href="#.">Подушки</a>
+						<a class="category__link" href="#.">Полотенца</a>
+						<a class="category__link" href="#.">Чехлы на мебель</a>
+						<a class="category__link" href="#.">Шторы и занавески</a>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Товары для дачи
+						</div>
+						<a class="category__link" href="#.">Банные принадлежности</a>
+						<a class="category__link" href="#.">Гамаки</a>
+						<a class="category__link" href="#.">Качели</a>
+						<a class="category__link" href="#.">Кресла напольные</a>
+						<a class="category__link" href="#.">Кресла подвесные</a>
+						<a class="category__link" href="#.">Лежаки</a>
+					</div>
+				</div>
+			</div>
+			<div class="category category__pets">
+				<div class="category__top">
+					<a href="#.">Для кошек</a>
+					<a href="#.">Для собак</a>
+					<a href="#.">Для грызунов</a>
+					<a href="#.">Для птиц</a>
+					<a href="#.">Экзотическим животным</a>
+				</div>
+				<div class="category__row">
+					<div class="category__col">
+						<div class="category__title">Домики и лежанки</div>
+						<a class="category__link" href="#.">Гамаки</a>
+						<a class="category__link" href="#.">Домики</a>
+						<a class="category__link" href="#.">Лежанки</a>
+						<a class="category__link" href="#.">Пледы</a>
+						<div class="category__spacing">
+							<div class="category__title">Игрушки</div>
+						</div>
+						<div class="category__spacing">
+							<div class="category__title">Когтеточки</div>
+						</div>
+						<div class="category__spacing">
+							<div class="category__title">Мешочки для лакомств</div>
+						</div>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Обувь
+						</div>
+						<div class="category__spacing">
+							<div class="category__title">Одежда</div>
+							<a class="category__link" href="#.">Кошки</a>
+							<a class="category__link" href="#.">Собаки</a>
+							<a class="category__link" href="#.">Птицы и грызуны</a>
+							<a class="category__link" href="#.">Крупные животные</a>
+							<a class="category__link" href="#.">Экзотические</a>
+						</div>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Переноски и сумки
+						</div>
+						<div class="category__spacing">
+							<div class="category__title">Поводки и ошейники</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="category category__wedding">
+				<div class="category__row">
+					<div class="category__col">
+						<div class="category__title">Декор и организация пространства</div>
+						<a class="category__link" href="#.">Авторские куклы</a>
+						<a class="category__link" href="#.">Интерьерные куклы</a>
+						<a class="category__link" href="#.">Детские куклы и пупсы</a>
+						<a class="category__link" href="#.">Тильда куклы</a>
+						<div class="category__spacing">
+							<div class="category__title">Одежда для кукол</div>
+						</div>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Текстиль
+						</div>
+						<a class="category__link" href="#.">Игрушки амигурурми</a>
+						<a class="category__link" href="#.">Игрушки спицами</a>
+						<a class="category__link" href="#.">Тедди игрушки</a>
+						<a class="category__link" href="#.">Тильда игрушки</a>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Товары для дачи
+						</div>
+						<a class="category__link" href="#.">Грызнки и погремушки</a>
+						<a class="category__link" href="#.">Кукольный театр</a>
+						<a class="category__link" href="#.">Кубики и книжки</a>
+						<a class="category__link" href="#.">Коврики и подвески</a>
+						<a class="category__link" href="#."></a>
+					</div>
+				</div>
+			</div>
+			<div class="category category__master-class">
+				<div class="category__row">
+					<div class="category__col">
+						<div class="category__title">Крючком</div>
+						<a class="category__link" href="#.">Аксессуары</a>
+						<a class="category__link" href="#.">Для животных</a>
+						<a class="category__link" href="#.">Игрушки</a>
+						<a class="category__link" href="#.">Интерьер</a>
+						<a class="category__link" href="#.">Обувь</a>
+						<a class="category__link" href="#.">Одежда</a>
+						<div class="category__spacing">
+							<div class="category__title">Спицами</div>
+							<a class="category__link" href="#.">Аксессуары</a>
+							<a class="category__link" href="#.">Для животных</a>
+							<a class="category__link" href="#.">Игрушки</a>
+							<a class="category__link" href="#.">Интерьер</a>
+							<a class="category__link" href="#.">Обувь</a>
+							<a class="category__link" href="#.">Одежда</a>
+						</div>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							На машине
+						</div>
+						<a class="category__link" href="#.">Аксессуары</a>
+						<a class="category__link" href="#.">Для животных</a>
+						<a class="category__link" href="#.">Интерьер</a>
+						<a class="category__link" href="#.">Одежда</a>
+						<div class="category__spacing">
+							<div class="category__title">Руками</div>
+						</div>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Макраме
+						</div>
+						<a class="category__link" href="#.">Аксессуары</a>
+						<a class="category__link" href="#.">Для животных</a>
+						<a class="category__link" href="#.">Игрушки</a>
+						<a class="category__link" href="#.">Интерьер</a>
+						<a class="category__link" href="#.">Обувь</a>
+						<a class="category__link" href="#.">Одежда</a>
+						<div class="category__spacing">
+							<div class="category__title">Ткачество</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="category category__order">
+				<div class="category__row">
+					<div class="category__col">
+						<div class="category__title">Подарки и сувениры</div>
+						<a class="category__link" href="#.">Именные подарки</a>
+						<a class="category__link" href="#.">Копилки</a>
+						<a class="category__link" href="#.">Кулинарные сувениры</a>
+						<a class="category__link" href="#.">Магниты</a>
+						<a class="category__link" href="#.">Наборы</a>
+						<a class="category__link" href="#.">Новогодние сувениры</a>
+						<a class="category__link" href="#.">Оформление бутылок</a>
+						<a class="category__link" href="#.">Праздничное оформление</a>
+						<a class="category__link" href="#.">Приколы</a>
+						<a class="category__link" href="#.">Упаковка</a>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Праздники
+						</div>
+						<a class="category__link" href="#.">Новый год</a>
+						<a class="category__link" href="#.">Рождство</a>
+						<a class="category__link" href="#.">День Святого Валентина</a>
+						<a class="category__link" href="#.">23 февраля</a>
+						<a class="category__link" href="#.">8 марта</a>
+						<a class="category__link" href="#.">Пасха</a>
+						<a class="category__link" href="#.">День учителя</a>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							События
+						</div>
+						<a class="category__link" href="#.">Выпускной</a>
+						<a class="category__link" href="#.">Для влюбленных</a>
+						<a class="category__link" href="#.">Именины</a>
+						<a class="category__link" href="#.">Крещение</a>
+						<a class="category__link" href="#.">Новоселье</a>
+						<a class="category__link" href="#.">Приколы</a>
+						<a class="category__link" href="#.">Помолвка</a>
+						<a class="category__link" href="#.">Свадьба</a>
+						<a class="category__link" href="#.">Рождение ребенка</a>
+					</div>
+				</div>
+			</div>
+			<div class="category category__presents">
+				<div class="category__top">
+					<a href="#.">Знакомым</a>
+					<a href="#.">Коллегам</a>
+					<a href="#.">Любимым</a>
+				</div>
+				<div class="category__row">
+					<div class="category__col">
+						<div class="category__title">Подарки и сувениры</div>
+						<a class="category__link" href="#.">Именные подарки</a>
+						<a class="category__link" href="#.">Копилки</a>
+						<a class="category__link" href="#.">Кулинарные сувениры</a>
+						<a class="category__link" href="#.">Магниты</a>
+						<a class="category__link" href="#.">Наборы</a>
+						<a class="category__link" href="#.">Новогодние сувениры</a>
+						<a class="category__link" href="#.">Оформление бутылок</a>
+						<a class="category__link" href="#.">Праздничное оформление</a>
+						<a class="category__link" href="#.">Приколы</a>
+						<a class="category__link" href="#.">Упаковка</a>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							Праздники
+						</div>
+						<a class="category__link" href="#.">Новый год</a>
+						<a class="category__link" href="#.">Рождство</a>
+						<a class="category__link" href="#.">День Святого Валентина</a>
+						<a class="category__link" href="#.">23 февраля</a>
+						<a class="category__link" href="#.">8 марта</a>
+						<a class="category__link" href="#.">Пасха</a>
+						<a class="category__link" href="#.">День учителя</a>
+					</div>
+					<div class="category__col">
+						<div class="category__title">
+							События
+						</div>
+						<a class="category__link" href="#.">Выпускной</a>
+						<a class="category__link" href="#.">Для влюбленных</a>
+						<a class="category__link" href="#.">Именины</a>
+						<a class="category__link" href="#.">Крещение</a>
+						<a class="category__link" href="#.">Новоселье</a>
+						<a class="category__link" href="#.">Приколы</a>
+						<a class="category__link" href="#.">Помолвка</a>
+						<a class="category__link" href="#.">Свадьба</a>
+						<a class="category__link" href="#.">Рождение ребенка</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__catalog-menu_mobile">
+			<div class="header__catalog-menu_mobile__container">
+				<div class="catalog__title">Каталог</div>
+				<hr class="catalog__hr_2">
+				<ul class="catalog_mobile__categories">
+					<li class="catalog_mobile__category-wrapper">
+						<button class="catalog_mobile__category catalog_mobile__clothes">
+							<div class="catalog_mobile__name">Одежда</div>
+							<div class="catalog__arrow">
+								<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.00199 6L0.767961 1.76597C0.36397 1.36198 0.36397 0.706984 0.767961 0.302993C1.17195 -0.100998 1.82695 -0.100998 2.23094 0.302993L7.19646 5.26851C7.60045 5.6725 7.60045 6.3275 7.19646 6.73149L2.23094 11.697C1.82695 12.101 1.17195 12.101 0.767961 11.697C0.36397 11.293 0.36397 10.638 0.767961 10.234L5.00199 6Z" fill="black"/>
+								</svg>
+							</div>
+						</button>
+					</li>
+					<li class="catalog_mobile__category-wrapper">
+						<button class="catalog_mobile__category catalog_mobile__shoes">
+							<div class="catalog_mobile__name">Обувь</div>
+							<div class="catalog__arrow">
+								<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.00199 6L0.767961 1.76597C0.36397 1.36198 0.36397 0.706984 0.767961 0.302993C1.17195 -0.100998 1.82695 -0.100998 2.23094 0.302993L7.19646 5.26851C7.60045 5.6725 7.60045 6.3275 7.19646 6.73149L2.23094 11.697C1.82695 12.101 1.17195 12.101 0.767961 11.697C0.36397 11.293 0.36397 10.638 0.767961 10.234L5.00199 6Z" fill="black"/>
+								</svg>
+							</div>
+						</button>
+					</li>
+					<li class="catalog_mobile__category-wrapper">
+						<button class="catalog_mobile__category catalog_mobile__accesories">
+							<div class="catalog_mobile__name">Украшения и аксессуары</div>
+							<div class="catalog__arrow">
+								<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.00199 6L0.767961 1.76597C0.36397 1.36198 0.36397 0.706984 0.767961 0.302993C1.17195 -0.100998 1.82695 -0.100998 2.23094 0.302993L7.19646 5.26851C7.60045 5.6725 7.60045 6.3275 7.19646 6.73149L2.23094 11.697C1.82695 12.101 1.17195 12.101 0.767961 11.697C0.36397 11.293 0.36397 10.638 0.767961 10.234L5.00199 6Z" fill="black"/>
+								</svg>
+							</div>
+						</button>
+					</li>
+					<li class="catalog_mobile__category-wrapper">
+						<button class="catalog_mobile__category catalog_mobile__baby-clothes">
+							<div class="catalog_mobile__name">Детская одежда</div>
+							<div class="catalog__arrow">
+								<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.00199 6L0.767961 1.76597C0.36397 1.36198 0.36397 0.706984 0.767961 0.302993C1.17195 -0.100998 1.82695 -0.100998 2.23094 0.302993L7.19646 5.26851C7.60045 5.6725 7.60045 6.3275 7.19646 6.73149L2.23094 11.697C1.82695 12.101 1.17195 12.101 0.767961 11.697C0.36397 11.293 0.36397 10.638 0.767961 10.234L5.00199 6Z" fill="black"/>
+								</svg>
+							</div>
+						</button>
+					</li>
+					<li class="catalog_mobile__category-wrapper">
+						<button class="catalog_mobile__category catalog_mobile__toys">
+							<div class="catalog_mobile__name">Игрушки</div>
+							<div class="catalog__arrow">
+								<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.00199 6L0.767961 1.76597C0.36397 1.36198 0.36397 0.706984 0.767961 0.302993C1.17195 -0.100998 1.82695 -0.100998 2.23094 0.302993L7.19646 5.26851C7.60045 5.6725 7.60045 6.3275 7.19646 6.73149L2.23094 11.697C1.82695 12.101 1.17195 12.101 0.767961 11.697C0.36397 11.293 0.36397 10.638 0.767961 10.234L5.00199 6Z" fill="black"/>
+								</svg>
+							</div>
+						</button>
+					</li>
+					<li class="catalog_mobile__category-wrapper">
+						<button class="catalog_mobile__category catalog_mobile__wedding">
+							<div class="catalog_mobile__name">Свадьба</div>
+							<div class="catalog__arrow">
+								<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.00199 6L0.767961 1.76597C0.36397 1.36198 0.36397 0.706984 0.767961 0.302993C1.17195 -0.100998 1.82695 -0.100998 2.23094 0.302993L7.19646 5.26851C7.60045 5.6725 7.60045 6.3275 7.19646 6.73149L2.23094 11.697C1.82695 12.101 1.17195 12.101 0.767961 11.697C0.36397 11.293 0.36397 10.638 0.767961 10.234L5.00199 6Z" fill="black"/>
+								</svg>
+							</div>
+						</button>
+					</li>
+					<li class="catalog_mobile__category-wrapper">
+						<button class="catalog_mobile__category catalog_mobile__home-interior">
+							<div class="catalog_mobile__name">Дом и интерьер</div>
+							<div class="catalog__arrow">
+								<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.00199 6L0.767961 1.76597C0.36397 1.36198 0.36397 0.706984 0.767961 0.302993C1.17195 -0.100998 1.82695 -0.100998 2.23094 0.302993L7.19646 5.26851C7.60045 5.6725 7.60045 6.3275 7.19646 6.73149L2.23094 11.697C1.82695 12.101 1.17195 12.101 0.767961 11.697C0.36397 11.293 0.36397 10.638 0.767961 10.234L5.00199 6Z" fill="black"/>
+								</svg>
+							</div>
+						</button>
+					</li>
+					<li class="catalog_mobile__category-wrapper">
+						<button class="catalog_mobile__category catalog_mobile__pets">
+							<div class="catalog_mobile__name">Для домашних животных</div>
+							<div class="catalog__arrow">
+								<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.00199 6L0.767961 1.76597C0.36397 1.36198 0.36397 0.706984 0.767961 0.302993C1.17195 -0.100998 1.82695 -0.100998 2.23094 0.302993L7.19646 5.26851C7.60045 5.6725 7.60045 6.3275 7.19646 6.73149L2.23094 11.697C1.82695 12.101 1.17195 12.101 0.767961 11.697C0.36397 11.293 0.36397 10.638 0.767961 10.234L5.00199 6Z" fill="black"/>
+								</svg>
+							</div>
+						</button>
+					</li>
+					<li class="catalog_mobile__category-wrapper">
+						<button class="catalog_mobile__category catalog_mobile__gift">
+							<div class="catalog_mobile__name">Подарки</div>
+							<div class="catalog__arrow">
+								<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.00199 6L0.767961 1.76597C0.36397 1.36198 0.36397 0.706984 0.767961 0.302993C1.17195 -0.100998 1.82695 -0.100998 2.23094 0.302993L7.19646 5.26851C7.60045 5.6725 7.60045 6.3275 7.19646 6.73149L2.23094 11.697C1.82695 12.101 1.17195 12.101 0.767961 11.697C0.36397 11.293 0.36397 10.638 0.767961 10.234L5.00199 6Z" fill="black"/>
+								</svg>
+							</div>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="catalog_mobile-open">
+		<div class="mobile-open__category mobile-open__clothes">
+			<div class="catalog_mobile-open__header">
+				<div class="catalog_mobile-open__header__container">
+					<img src="img/ico/mobile-catalog-arrow.svg" alt="">
+					<div class="catalog_mobile-open__name">Одежда</div>
+				</div>
+			</div>
+			<div class="catalog_mobile-open__body-wrapper">
+				<ul class="catalog_mobile-open__body catalog_mobile-open__body_1">
+					<li class="catalog_mobile__item catalog_mobile__title">Все товары раздела</li>
+					<hr class="catalog__hr_1">
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для женщин</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для мужчин</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для детей</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Бельё</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Домашняя одежда</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Большие размеры</a>
+					</li>
+				</ul>
+				<hr class="catalog__hr">
+				<ul class="catalog_mobile-open__body catalog_mobile-open__body_2">
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Новинки</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Скидки</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для беременных</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для кормящих мам</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Все подборки</a>
+					</li>
+				</ul>
+				<hr class="catalog__hr">
+				<a class="catalog_mobile__more" href="">Посмотреть всё</a>
+			</div>
+			<div class="catalog_mobile-open__footer">
+				<ul>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Подборки</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Как открыть магазин</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Тарифы</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Правила</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">О компании</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Блог</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Рекламодателям</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Помощь</a>
+					</li>
+				</ul>
+				<div class="catalog_mobile__status">
+					<div class="catalog-status__flag"><img src="img/ico/russia.svg" alt=""></div>
+					<div class="catalog-status__text"><span class="catalog-status__country">Россия</span> | <span class="catalog-status__language">Русский</span> | <span class="catalog-status__currency">₽ (руб.)</span></div>
+				</div>
+				<div class="catalog-social__title">Подписывайтесь на нас</div>
+				<ul class="catalog_mobile__social">
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/vk.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/instagram.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/facebook.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/odnoklassniki.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/pinterest.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/mail.svg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="mobile-open__category mobile-open__shoes">
+			<div class="catalog_mobile-open__header">
+				<div class="catalog_mobile-open__header__container">
+					<img src="img/ico/mobile-catalog-arrow.svg" alt="">
+					<div class="catalog_mobile-open__name">Обувь</div>
+				</div>
+			</div>
+			<div class="catalog_mobile-open__body-wrapper">
+				<ul class="catalog_mobile-open__body catalog_mobile-open__body_1">
+					<li class="catalog_mobile__item catalog_mobile__title">Все товары раздела</li>
+					<hr class="catalog__hr_1">
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для женщин</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для мужчин</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для детей</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Бельё</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Домашняя одежда</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Большие размеры</a>
+					</li>
+				</ul>
+				<hr class="catalog__hr">
+				<ul class="catalog_mobile-open__body catalog_mobile-open__body_2">
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Новинки</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Скидки</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для беременных</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для кормящих мам</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Все подборки</a>
+					</li>
+				</ul>
+				<hr class="catalog__hr">
+				<a class="catalog_mobile__more" href="">Посмотреть всё</a>
+			</div>
+			<div class="catalog_mobile-open__footer">
+				<ul>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Подборки</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Как открыть магазин</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Тарифы</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Правила</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">О компании</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Блог</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Рекламодателям</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Помощь</a>
+					</li>
+				</ul>
+				<div class="catalog_mobile__status">
+					<div class="catalog-status__flag"><img src="img/ico/russia.svg" alt=""></div>
+					<div class="catalog-status__text"><span class="catalog-status__country">Россия</span> | <span class="catalog-status__language">Русский</span> | <span class="catalog-status__currency">₽ (руб.)</span></div>
+				</div>
+				<div class="catalog-social__title">Подписывайтесь на нас</div>
+				<ul class="catalog_mobile__social">
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/vk.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/instagram.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/facebook.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/odnoklassniki.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/pinterest.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/mail.svg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="mobile-open__category mobile-open__accesories">
+			<div class="catalog_mobile-open__header">
+				<div class="catalog_mobile-open__header__container">
+					<img src="img/ico/mobile-catalog-arrow.svg" alt="">
+					<div class="catalog_mobile-open__name">Украшения и аксессуары</div>
+				</div>
+			</div>
+			<div class="catalog_mobile-open__body-wrapper">
+				<ul class="catalog_mobile-open__body catalog_mobile-open__body_1">
+					<li class="catalog_mobile__item catalog_mobile__title">Все товары раздела</li>
+					<hr class="catalog__hr_1">
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для женщин</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для мужчин</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для детей</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Бельё</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Домашняя одежда</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Большие размеры</a>
+					</li>
+				</ul>
+				<hr class="catalog__hr">
+				<ul class="catalog_mobile-open__body catalog_mobile-open__body_2">
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Новинки</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Скидки</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для беременных</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для кормящих мам</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Все подборки</a>
+					</li>
+				</ul>
+				<hr class="catalog__hr">
+				<a class="catalog_mobile__more" href="">Посмотреть всё</a>
+			</div>
+			<div class="catalog_mobile-open__footer">
+				<ul>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Подборки</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Как открыть магазин</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Тарифы</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Правила</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">О компании</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Блог</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Рекламодателям</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Помощь</a>
+					</li>
+				</ul>
+				<div class="catalog_mobile__status">
+					<div class="catalog-status__flag"><img src="img/ico/russia.svg" alt=""></div>
+					<div class="catalog-status__text"><span class="catalog-status__country">Россия</span> | <span class="catalog-status__language">Русский</span> | <span class="catalog-status__currency">₽ (руб.)</span></div>
+				</div>
+				<div class="catalog-social__title">Подписывайтесь на нас</div>
+				<ul class="catalog_mobile__social">
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/vk.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/instagram.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/facebook.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/odnoklassniki.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/pinterest.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/mail.svg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="mobile-open__category mobile-open__baby-clothes">
+			<div class="catalog_mobile-open__header">
+				<div class="catalog_mobile-open__header__container">
+					<img src="img/ico/mobile-catalog-arrow.svg" alt="">
+					<div class="catalog_mobile-open__name">Детская одежда</div>
+				</div>
+			</div>
+			<div class="catalog_mobile-open__body-wrapper">
+				<ul class="catalog_mobile-open__body catalog_mobile-open__body_1">
+					<li class="catalog_mobile__item catalog_mobile__title">Все товары раздела</li>
+					<hr class="catalog__hr_1">
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для женщин</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для мужчин</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для детей</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Бельё</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Домашняя одежда</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Большие размеры</a>
+					</li>
+				</ul>
+				<hr class="catalog__hr">
+				<ul class="catalog_mobile-open__body catalog_mobile-open__body_2">
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Новинки</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Скидки</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для беременных</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для кормящих мам</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Все подборки</a>
+					</li>
+				</ul>
+				<hr class="catalog__hr">
+				<a class="catalog_mobile__more" href="">Посмотреть всё</a>
+			</div>
+			<div class="catalog_mobile-open__footer">
+				<ul>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Подборки</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Как открыть магазин</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Тарифы</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Правила</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">О компании</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Блог</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Рекламодателям</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Помощь</a>
+					</li>
+				</ul>
+				<div class="catalog_mobile__status">
+					<div class="catalog-status__flag"><img src="img/ico/russia.svg" alt=""></div>
+					<div class="catalog-status__text"><span class="catalog-status__country">Россия</span> | <span class="catalog-status__language">Русский</span> | <span class="catalog-status__currency">₽ (руб.)</span></div>
+				</div>
+				<div class="catalog-social__title">Подписывайтесь на нас</div>
+				<ul class="catalog_mobile__social">
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/vk.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/instagram.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/facebook.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/odnoklassniki.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/pinterest.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/mail.svg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="mobile-open__category mobile-open__toys">
+			<div class="catalog_mobile-open__header">
+				<div class="catalog_mobile-open__header__container">
+					<img src="img/ico/mobile-catalog-arrow.svg" alt="">
+					<div class="catalog_mobile-open__name">Игрушки</div>
+				</div>
+			</div>
+			<div class="catalog_mobile-open__body-wrapper">
+				<ul class="catalog_mobile-open__body catalog_mobile-open__body_1">
+					<li class="catalog_mobile__item catalog_mobile__title">Все товары раздела</li>
+					<hr class="catalog__hr_1">
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для женщин</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для мужчин</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для детей</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Бельё</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Домашняя одежда</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Большие размеры</a>
+					</li>
+				</ul>
+				<hr class="catalog__hr">
+				<ul class="catalog_mobile-open__body catalog_mobile-open__body_2">
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Новинки</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Скидки</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для беременных</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для кормящих мам</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Все подборки</a>
+					</li>
+				</ul>
+				<hr class="catalog__hr">
+				<a class="catalog_mobile__more" href="">Посмотреть всё</a>
+			</div>
+			<div class="catalog_mobile-open__footer">
+				<ul>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Подборки</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Как открыть магазин</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Тарифы</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Правила</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">О компании</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Блог</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Рекламодателям</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Помощь</a>
+					</li>
+				</ul>
+				<div class="catalog_mobile__status">
+					<div class="catalog-status__flag"><img src="img/ico/russia.svg" alt=""></div>
+					<div class="catalog-status__text"><span class="catalog-status__country">Россия</span> | <span class="catalog-status__language">Русский</span> | <span class="catalog-status__currency">₽ (руб.)</span></div>
+				</div>
+				<div class="catalog-social__title">Подписывайтесь на нас</div>
+				<ul class="catalog_mobile__social">
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/vk.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/instagram.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/facebook.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/odnoklassniki.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/pinterest.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/mail.svg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="mobile-open__category mobile-open__wedding">
+			<div class="catalog_mobile-open__header">
+				<div class="catalog_mobile-open__header__container">
+					<img src="img/ico/mobile-catalog-arrow.svg" alt="">
+					<div class="catalog_mobile-open__name">Свадьба</div>
+				</div>
+			</div>
+			<div class="catalog_mobile-open__body-wrapper">
+				<ul class="catalog_mobile-open__body catalog_mobile-open__body_1">
+					<li class="catalog_mobile__item catalog_mobile__title">Все товары раздела</li>
+					<hr class="catalog__hr_1">
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для женщин</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для мужчин</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для детей</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Бельё</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Домашняя одежда</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Большие размеры</a>
+					</li>
+				</ul>
+				<hr class="catalog__hr">
+				<ul class="catalog_mobile-open__body catalog_mobile-open__body_2">
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Новинки</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Скидки</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для беременных</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для кормящих мам</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Все подборки</a>
+					</li>
+				</ul>
+				<hr class="catalog__hr">
+				<a class="catalog_mobile__more" href="">Посмотреть всё</a>
+			</div>
+			<div class="catalog_mobile-open__footer">
+				<ul>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Подборки</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Как открыть магазин</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Тарифы</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Правила</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">О компании</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Блог</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Рекламодателям</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Помощь</a>
+					</li>
+				</ul>
+				<div class="catalog_mobile__status">
+					<div class="catalog-status__flag"><img src="img/ico/russia.svg" alt=""></div>
+					<div class="catalog-status__text"><span class="catalog-status__country">Россия</span> | <span class="catalog-status__language">Русский</span> | <span class="catalog-status__currency">₽ (руб.)</span></div>
+				</div>
+				<div class="catalog-social__title">Подписывайтесь на нас</div>
+				<ul class="catalog_mobile__social">
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/vk.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/instagram.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/facebook.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/odnoklassniki.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/pinterest.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/mail.svg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="mobile-open__category mobile-open__home-interior">
+			<div class="catalog_mobile-open__header">
+				<div class="catalog_mobile-open__header__container">
+					<img src="img/ico/mobile-catalog-arrow.svg" alt="">
+					<div class="catalog_mobile-open__name">Дом и интерьер</div>
+				</div>
+			</div>
+			<div class="catalog_mobile-open__body-wrapper">
+				<ul class="catalog_mobile-open__body catalog_mobile-open__body_1">
+					<li class="catalog_mobile__item catalog_mobile__title">Все товары раздела</li>
+					<hr class="catalog__hr_1">
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для женщин</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для мужчин</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для детей</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Бельё</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Домашняя одежда</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Большие размеры</a>
+					</li>
+				</ul>
+				<hr class="catalog__hr">
+				<ul class="catalog_mobile-open__body catalog_mobile-open__body_2">
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Новинки</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Скидки</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для беременных</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для кормящих мам</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Все подборки</a>
+					</li>
+				</ul>
+				<hr class="catalog__hr">
+				<a class="catalog_mobile__more" href="">Посмотреть всё</a>
+			</div>
+			<div class="catalog_mobile-open__footer">
+				<ul>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Подборки</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Как открыть магазин</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Тарифы</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Правила</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">О компании</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Блог</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Рекламодателям</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Помощь</a>
+					</li>
+				</ul>
+				<div class="catalog_mobile__status">
+					<div class="catalog-status__flag"><img src="img/ico/russia.svg" alt=""></div>
+					<div class="catalog-status__text"><span class="catalog-status__country">Россия</span> | <span class="catalog-status__language">Русский</span> | <span class="catalog-status__currency">₽ (руб.)</span></div>
+				</div>
+				<div class="catalog-social__title">Подписывайтесь на нас</div>
+				<ul class="catalog_mobile__social">
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/vk.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/instagram.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/facebook.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/odnoklassniki.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/pinterest.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/mail.svg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="mobile-open__category mobile-open__pets">
+			<div class="catalog_mobile-open__header">
+				<div class="catalog_mobile-open__header__container">
+					<img src="img/ico/mobile-catalog-arrow.svg" alt="">
+					<div class="catalog_mobile-open__name">Для домашних животных</div>
+				</div>
+			</div>
+			<div class="catalog_mobile-open__body-wrapper">
+				<ul class="catalog_mobile-open__body catalog_mobile-open__body_1">
+					<li class="catalog_mobile__item catalog_mobile__title">Все товары раздела</li>
+					<hr class="catalog__hr_1">
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для женщин</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для мужчин</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для детей</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Бельё</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Домашняя одежда</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Большие размеры</a>
+					</li>
+				</ul>
+				<hr class="catalog__hr">
+				<ul class="catalog_mobile-open__body catalog_mobile-open__body_2">
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Новинки</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Скидки</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для беременных</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для кормящих мам</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Все подборки</a>
+					</li>
+				</ul>
+				<hr class="catalog__hr">
+				<a class="catalog_mobile__more" href="">Посмотреть всё</a>
+			</div>
+			<div class="catalog_mobile-open__footer">
+				<ul>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Подборки</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Как открыть магазин</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Тарифы</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Правила</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">О компании</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Блог</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Рекламодателям</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Помощь</a>
+					</li>
+				</ul>
+				<div class="catalog_mobile__status">
+					<div class="catalog-status__flag"><img src="img/ico/russia.svg" alt=""></div>
+					<div class="catalog-status__text"><span class="catalog-status__country">Россия</span> | <span class="catalog-status__language">Русский</span> | <span class="catalog-status__currency">₽ (руб.)</span></div>
+				</div>
+				<div class="catalog-social__title">Подписывайтесь на нас</div>
+				<ul class="catalog_mobile__social">
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/vk.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/instagram.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/facebook.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/odnoklassniki.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/pinterest.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/mail.svg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="mobile-open__category mobile-open__gift">
+			<div class="catalog_mobile-open__header">
+				<div class="catalog_mobile-open__header__container">
+					<img src="img/ico/mobile-catalog-arrow.svg" alt="">
+					<div class="catalog_mobile-open__name">Подарок</div>
+				</div>
+			</div>
+			<div class="catalog_mobile-open__body-wrapper">
+				<ul class="catalog_mobile-open__body catalog_mobile-open__body_1">
+					<li class="catalog_mobile__item catalog_mobile__title">Все товары раздела</li>
+					<hr class="catalog__hr_1">
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для женщин</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для мужчин</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для детей</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Бельё</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Домашняя одежда</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Большие размеры</a>
+					</li>
+				</ul>
+				<hr class="catalog__hr">
+				<ul class="catalog_mobile-open__body catalog_mobile-open__body_2">
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Новинки</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Скидки</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для беременных</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Одежда для кормящих мам</a>
+					</li>
+					<li class="catalog_mobile__item">
+						<a class="catalog_mobile__link" href="">Все подборки</a>
+					</li>
+				</ul>
+				<hr class="catalog__hr">
+				<a class="catalog_mobile__more" href="">Посмотреть всё</a>
+			</div>
+			<div class="catalog_mobile-open__footer">
+				<ul>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Подборки</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Как открыть магазин</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Тарифы</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Правила</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">О компании</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Блог</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Рекламодателям</a>
+					</li>
+					<li class="catalog-footer__item">
+						<a class="catalog-footer__link" href="">Помощь</a>
+					</li>
+				</ul>
+				<div class="catalog_mobile__status">
+					<div class="catalog-status__flag"><img src="img/ico/russia.svg" alt=""></div>
+					<div class="catalog-status__text"><span class="catalog-status__country">Россия</span> | <span class="catalog-status__language">Русский</span> | <span class="catalog-status__currency">₽ (руб.)</span></div>
+				</div>
+				<div class="catalog-social__title">Подписывайтесь на нас</div>
+				<ul class="catalog_mobile__social">
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/vk.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/instagram.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/facebook.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/odnoklassniki.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/pinterest.svg" alt=""></a></li>
+					<li class="catalog-social__item"><a href=""><img src="img/ico/social/mail.svg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, temporibus, ratione! Unde iste ab vel excepturi esse, totam dolor iusto. Cum consequuntur sunt tempora illo voluptatibus sint, optio quam error autem? Iste accusantium id doloribus. Corrupti esse architecto molestiae provident! Repellendus minima doloremque, mollitia magni ipsam, blanditiis fuga iste optio tempora sit laudantium, tempore fugit earum similique. Itaque adipisci qui odio quam suscipit magni sit explicabo minus magnam, praesentium voluptas blanditiis asperiores autem, consequatur sed, accusantium ipsa modi veritatis deserunt voluptate soluta aliquam aut expedita et. Laborum eveniet, rerum quam consectetur sed. Odit deleniti pariatur autem earum incidunt tenetur ratione aut, ipsum, placeat unde dolores? Velit deserunt unde nam aperiam eveniet vitae recusandae, nostrum voluptatum enim voluptate officiis natus dolore temporibus iusto hic quae similique optio, veniam earum laborum dolores quod, provident fuga tempora! Nisi error, repellat voluptate adipisci mollitia est illo, corporis nihil laborum, dolor accusamus maiores qui dolorem aperiam laudantium similique ullam sapiente esse expedita consequuntur aspernatur numquam magnam eligendi tenetur. Ipsa, officiis tempore tenetur architecto, sunt quos voluptates minus nihil obcaecati ut ad natus mollitia sed. Expedita illum reprehenderit animi incidunt cupiditate corporis consectetur tempore ipsam dolorum quisquam reiciendis eos dolor aspernatur commodi recusandae deserunt explicabo, temporibus facere voluptatum voluptatem ipsum quis non. Laudantium modi, consectetur, adipisci, officia eligendi vel, vero ex repellendus nihil obcaecati dolores delectus corrupti cumque quasi nesciunt ut provident voluptatem est eaque maiores! Atque excepturi vel sit totam itaque, voluptatum nesciunt, quibusdam ducimus perferendis, in quasi tempora inventore ipsa illum molestias impedit placeat! Consequuntur, nam amet neque illum unde repellat placeat. Quaerat suscipit dignissimos provident nesciunt ut quod obcaecati consequatur quisquam. Debitis minima error ad explicabo commodi quidem necessitatibus dolore assumenda accusamus similique recusandae perferendis aut iusto, culpa optio! Veritatis quo nesciunt labore qui maiores nam fuga libero nostrum, aliquid sapiente nulla facere cum doloremque maxime temporibus ea magnam dolore optio, nemo tenetur itaque. Ab labore necessitatibus recusandae vero quas repellat, autem, minima exercitationem molestiae molestias minus quod. Architecto cum, amet quod maxime possimus voluptatem debitis inventore accusantium nesciunt, iusto, distinctio nulla impedit, molestias iste! Pariatur facilis libero earum accusamus tempora repellat quas temporibus nostrum reprehenderit numquam ducimus blanditiis animi, velit tenetur quos sed consequuntur cum molestias labore non incidunt. Earum quasi explicabo debitis, impedit pariatur assumenda neque porro asperiores eum quis beatae illo odio unde quibusdam! Debitis odit modi nam quasi assumenda nihil nobis laudantium. Quas animi placeat, repellendus praesentium aspernatur corrupti perferendis ullam aperiam harum. Nesciunt aliquam quae illo eos et quos, molestias nostrum perspiciatis dolorem expedita laudantium doloremque aut minima aperiam esse ducimus officia eaque suscipit cupiditate dolores. Voluptas voluptate autem iure aut atque eligendi sint architecto esse facilis vitae nemo fugiat molestias, delectus ipsum consequuntur quibusdam explicabo iste voluptatum, odit necessitatibus, neque veniam molestiae id libero. Nostrum quod quia earum, cumque consequuntur pariatur nobis quaerat adipisci ipsa in veniam soluta, illum reprehenderit corrupti iure vel harum odit aspernatur eum sapiente omnis itaque aut, facere et. Autem quod iste debitis quo magni aliquam repellendus voluptatum quaerat molestiae necessitatibus asperiores minus fugit fugiat cum mollitia odit ipsum, eius quam similique dolores adipisci nesciunt impedit hic, labore. Ratione aliquid assumenda facilis maxime veritatis itaque, optio dolor cupiditate quas laborum praesentium rem delectus libero sapiente deleniti laboriosam pariatur corrupti hic nam nostrum, perferendis architecto harum deserunt. Tenetur est rerum officiis, quia eius, tempore reprehenderit, minima ut molestiae et repudiandae voluptate amet. Sunt, assumenda veritatis, obcaecati sequi sint perferendis voluptatibus qui alias iusto consequatur quasi, sit facere. Voluptates modi officia dolorem totam voluptate dignissimos eum enim nulla, exercitationem rerum fugiat nobis nesciunt, mollitia eligendi cumque, nam id accusamus earum impedit asperiores quidem ducimus libero!
+	</div>
+	<!-- scripts -->
+    <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="js/myscript.js" type="text/javascript"></script>
+    <script src="js/popper.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+</body>
+</html>
